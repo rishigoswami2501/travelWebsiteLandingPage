@@ -262,6 +262,310 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #FFF498; }
 
+.card {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  width: 80%;
+  height: 250px; }
+  @media screen and (max-width: 860px) {
+    .card {
+      width: 85%;
+      left: 7.5%; } }
+  @media screen and (max-width: 804px) {
+    .card {
+      flex-flow: wrap;
+      justify-content: center;
+      height: 455px; } }
+  .card .card1 {
+    position: relative;
+    background: #ffffff;
+    height: 100%;
+    width: 200px;
+    border: 0.5px solid;
+    padding: 5px;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5); }
+    @media screen and (max-width: 1024px) {
+      .card .card1 {
+        margin: 0 5px; } }
+    @media screen and (max-width: 860px) {
+      .card .card1 {
+        height: 230px;
+        width: 190px;
+        margin: 0 5px; } }
+    @media screen and (max-width: 804px) {
+      .card .card1 {
+        width: 180px;
+        height: 220px;
+        padding: 3px;
+        margin: 0 5px; } }
+    .card .card1 h3 {
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      line-height: 0;
+      font-size: 20px; }
+      @media screen and (max-width: 904px) {
+        .card .card1 h3 {
+          font-size: 18.5px; } }
+      @media screen and (max-width: 860px) {
+        .card .card1 h3 {
+          font-size: 18px; } }
+      @media screen and (max-width: 804px) {
+        .card .card1 h3 {
+          font-size: 16px; } }
+    .card .card1 p {
+      text-align: center;
+      font-family: 'Grenze', serif;
+      font-weight: 400;
+      font-size: 15.5px;
+      line-height: 1.2em;
+      margin: 0 4px 0 4px; }
+      @media screen and (max-width: 860px) {
+        .card .card1 p {
+          font-size: 14px; } }
+      @media screen and (max-width: 804px) {
+        .card .card1 p {
+          font-size: 13px; } }
+    .card .card1 span {
+      position: absolute;
+      bottom: 8px;
+      right: 4px;
+      margin-right: 3px;
+      font-family: 'Mali', cursive;
+      font-size: 12px; }
+      @media screen and (max-width: 860px) {
+        .card .card1 span {
+          font-size: 11px; } }
+      @media screen and (max-width: 804px) {
+        .card .card1 span {
+          font-size: 10px; } }
+
+.hotels {
+  position: relative;
+  background: url("../img/blueClippedBackground.svg") no-repeat;
+  height: 400px; }
+  @media screen and (max-width: 930px) {
+    .hotels {
+      height: 350px;
+      background-size: 100% 300px; } }
+  @media screen and (max-width: 804px) {
+    .hotels {
+      height: 320px;
+      background-size: 100% 280px; } }
+  @media screen and (max-width: 600px) {
+    .hotels {
+      height: 270px;
+      background-size: 100% 250px; } }
+  @media screen and (max-width: 518px) {
+    .hotels {
+      height: 250px;
+      background-size: 100% 220px; } }
+  .hotels h2 {
+    position: absolute;
+    top: 2%;
+    left: 20%;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 40px; }
+    @media screen and (max-width: 930px) {
+      .hotels h2 {
+        left: 17%; } }
+    @media screen and (max-width: 804px) {
+      .hotels h2 {
+        font-size: 35px;
+        left: 13%;
+        margin-top: 20px; } }
+    @media screen and (max-width: 600px) {
+      .hotels h2 {
+        font-size: 30px;
+        left: 11%;
+        margin-top: 18px; } }
+    @media screen and (max-width: 518px) {
+      .hotels h2 {
+        font-size: 24px; } }
+
+.hotel1 {
+  display: block;
+  width: 60%;
+  height: 60%;
+  background: #ffffff;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  border: 1px solid #000000; }
+  @media screen and (max-width: 930px) {
+    .hotel1 {
+      width: 66%;
+      height: 64%;
+      top: 27%;
+      left: 17%; } }
+  @media screen and (max-width: 804px) {
+    .hotel1 {
+      width: 74%;
+      height: 68%;
+      top: 25%;
+      left: 13%; } }
+  @media screen and (max-width: 600px) {
+    .hotel1 {
+      width: 78%;
+      height: 72%;
+      left: 11%;
+      top: 23%; } }
+  @media screen and (max-width: 518px) {
+    .hotel1 {
+      height: 68%; } }
+  .hotel1 img {
+    width: 45%;
+    float: left; }
+    @media screen and (max-width: 930px) {
+      .hotel1 img {
+        height: 75%; } }
+    @media screen and (max-width: 804px) {
+      .hotel1 img {
+        height: 70%; } }
+    @media screen and (max-width: 600px) {
+      .hotel1 img {
+        height: 60%; } }
+    @media screen and (max-width: 518px) {
+      .hotel1 img {
+        height: 65%; } }
+  .hotel1 .hotel1-desc {
+    width: 55%;
+    float: left; }
+    .hotel1 .hotel1-desc h3 {
+      margin: 5px auto 0;
+      text-align: center;
+      font-size: 26px;
+      font-family: "Roboto", sans-serif;
+      text-decoration: underline; }
+      @media screen and (max-width: 930px) {
+        .hotel1 .hotel1-desc h3 {
+          font-size: 22px; } }
+      @media screen and (max-width: 804px) {
+        .hotel1 .hotel1-desc h3 {
+          font-size: 20px;
+          margin: 4px auto 0; } }
+      @media screen and (max-width: 600px) {
+        .hotel1 .hotel1-desc h3 {
+          font-size: 18px; } }
+      @media screen and (max-width: 518px) {
+        .hotel1 .hotel1-desc h3 {
+          font-size: 16x; } }
+
+.hotel2 {
+  display: none; }
+
+.hotel3 {
+  display: none; }
+
+.desc1 {
+  display: flex;
+  justify-content: center;
+  margin: 3px auto; }
+  .desc1 h4 {
+    font-size: 19px;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600; }
+    @media screen and (max-width: 930px) {
+      .desc1 h4 {
+        font-size: 17px; } }
+    @media screen and (max-width: 804px) {
+      .desc1 h4 {
+        font-size: 16px; } }
+    @media screen and (max-width: 600px) {
+      .desc1 h4 {
+        font-size: 14px; } }
+    @media screen and (max-width: 518px) {
+      .desc1 h4 {
+        font-size: 13px; } }
+  .desc1 p {
+    margin: 4px 0 0 4px;
+    font-family: "Grenze", serif;
+    font-size: 16px;
+    font-weight: 400; }
+    @media screen and (max-width: 930px) {
+      .desc1 p {
+        font-size: 15px;
+        margin: 3px 0 0 3px; } }
+    @media screen and (max-width: 804px) {
+      .desc1 p {
+        font-size: 14px;
+        margin: 2px 0 0 3px; } }
+    @media screen and (max-width: 600px) {
+      .desc1 p {
+        font-size: 13px;
+        margin-top: 1px; } }
+    @media screen and (max-width: 518px) {
+      .desc1 p {
+        font-size: 12px; } }
+  .desc1 input {
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 40px;
+    margin-left: 4px; }
+    @media screen and (max-width: 518px) {
+      .desc1 input {
+        width: 30px; } }
+  .desc1 input:focus {
+    outline: none; }
+
+.atc-btn {
+  padding: 0;
+  background: #0583F2;
+  width: 80%;
+  margin: 5% 10% 0 10%;
+  background-color: #273fad; }
+  .atc-btn .atc {
+    display: flex;
+    padding: 8px 15px;
+    justify-content: center; }
+    .atc-btn .atc p {
+      font-size: 18px;
+      margin: 7px 0;
+      font-weight: 500;
+      color: #fff; }
+      @media screen and (max-width: 930px) {
+        .atc-btn .atc p {
+          font-size: 17px;
+          margin: 6px 0; } }
+      @media screen and (max-width: 804px) {
+        .atc-btn .atc p {
+          font-size: 15px;
+          margin: 5px 0;
+          font-weight: 400; } }
+      @media screen and (max-width: 600px) {
+        .atc-btn .atc p {
+          font-size: 13px; } }
+      @media screen and (max-width: 518px) {
+        .atc-btn .atc p {
+          font-size: 11px; } }
+    .atc-btn .atc img {
+      width: 25px;
+      height: 25px;
+      margin: 5px 0 0 6px; }
+      @media screen and (max-width: 930px) {
+        .atc-btn .atc img {
+          width: 23px;
+          height: 23px; } }
+      @media screen and (max-width: 804px) {
+        .atc-btn .atc img {
+          width: 20px;
+          height: 20px;
+          margin-top: 4px; } }
+      @media screen and (max-width: 600px) {
+        .atc-btn .atc img {
+          width: 18px;
+          height: 18px; } }
+      @media screen and (max-width: 518px) {
+        .atc-btn .atc img {
+          width: 16px;
+          height: 16px; } }
+
 .flex-video {
   height: 0;
   margin-bottom: 0.88889rem;
@@ -281,20 +585,36 @@ body {
 
 #header {
   position: relative;
-  height: 100vh; }
+  min-height: 100vh; }
 
 .wrapper {
   background: url(../img/banner.svg) no-repeat;
   background-size: cover;
   height: 80vh; }
+  @media screen and (max-width: 1024px) {
+    .wrapper {
+      height: 70vh; } }
+  @media screen and (max-width: 860px) {
+    .wrapper {
+      height: 65vh; } }
+  @media screen and (max-width: 804px) {
+    .wrapper {
+      height: 60vh; } }
 
 .main-nav {
   display: flex;
   margin-top: 20px; }
+  @media screen and (max-width: 710px) {
+    .main-nav .logo {
+      width: 160px;
+      height: 40px; } }
   .main-nav li {
     list-style: none; }
   .main-nav li:first-child {
     margin-right: auto; }
+    @media screen and (max-width: 710px) {
+      .main-nav li:first-child {
+        margin: 0 auto; } }
   .main-nav a {
     display: block;
     color: white;
@@ -302,44 +622,54 @@ body {
     padding: 1px 3px;
     text-decoration: none;
     font-weight: 600; }
+    @media screen and (max-width: 1024px) {
+      .main-nav a {
+        font-size: 13px;
+        padding: 1px 1.5px; } }
+    @media screen and (max-width: 860px) {
+      .main-nav a {
+        font-size: 10px; } }
   .main-nav li:nth-child(n+2) {
     text-transform: uppercase;
     margin-right: 40px; }
+    @media screen and (max-width: 1024px) {
+      .main-nav li:nth-child(n+2) {
+        margin-right: 20px; } }
+    @media screen and (max-width: 860px) {
+      .main-nav li:nth-child(n+2) {
+        margin-right: 17px; } }
+  .main-nav li:nth-child(2), .main-nav li:nth-child(3), .main-nav li:nth-child(4), .main-nav li:nth-child(5), .main-nav li:nth-child(6) {
+    margin-top: 14px; }
+    @media screen and (max-width: 1024px) {
+      .main-nav li:nth-child(2), .main-nav li:nth-child(3), .main-nav li:nth-child(4), .main-nav li:nth-child(5), .main-nav li:nth-child(6) {
+        margin-top: 17px; } }
+    @media screen and (max-width: 860px) {
+      .main-nav li:nth-child(2), .main-nav li:nth-child(3), .main-nav li:nth-child(4), .main-nav li:nth-child(5), .main-nav li:nth-child(6) {
+        margin-top: 18px; } }
+    @media screen and (max-width: 710px) {
+      .main-nav li:nth-child(2), .main-nav li:nth-child(3), .main-nav li:nth-child(4), .main-nav li:nth-child(5), .main-nav li:nth-child(6) {
+        display: none; } }
+  .main-nav li:last-child {
+    margin-top: 9.2px; }
 
 .border-nav-tag {
   border: 1.3px solid #ffffff; }
 
-.card {
-  display: flex;
-  justify-content: space-around;
+#scrollDownBtn {
+  width: 6%;
   position: absolute;
-  top: 55%;
-  width: 100%;
-  max-height: 250px;
-  height: 100%; }
-  .card .card1 {
-    position: relative;
-    background: #ffffff;
-    height: 100%;
-    width: 200px;
-    border: 0.5px solid;
-    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5); }
-    .card .card1 h3 {
-      text-align: center;
-      font-family: 'Roboto', sans-serif;
-      line-height: 0;
-      font-size: 20px; }
-    .card .card1 p {
-      text-align: center;
-      font-family: 'Grenze', serif;
-      font-weight: 400;
-      font-size: 15.5px;
-      line-height: 1.2em;
-      margin: 0 4px 0 4px; }
-    .card .card1 span {
-      position: absolute;
-      bottom: 8px;
-      right: 4px;
-      margin-right: 3px;
-      font-family: 'Mali', cursive;
-      font-size: 12px; }
+  bottom: 8%;
+  left: 47%; }
+  @media screen and (max-width: 804px) {
+    #scrollDownBtn {
+      display: none; } }
+  #scrollDownBtn svg {
+    display: block;
+    margin: 0 auto; }
+
+.main-wrapper {
+  width: 75%;
+  margin: 0 auto; }
+  @media screen and (max-width: 804px) {
+    .main-wrapper {
+      margin: 150px auto 0; } }
