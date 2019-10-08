@@ -345,23 +345,23 @@ body {
 .hotels {
   position: relative;
   background: url("../img/blueClippedBackground.svg") no-repeat;
-  height: 400px; }
+  height: 400px;
+  background-size: 100% 280px; }
   @media screen and (max-width: 930px) {
     .hotels {
       height: 350px;
-      background-size: 100% 300px; } }
+      background-size: 100% 230px; } }
   @media screen and (max-width: 804px) {
     .hotels {
       height: 320px;
-      background-size: 100% 280px; } }
-  @media screen and (max-width: 600px) {
+      background-size: 100% 200px; } }
+  @media screen and (max-width: 658px) {
     .hotels {
-      height: 270px;
-      background-size: 100% 250px; } }
-  @media screen and (max-width: 518px) {
+      background-size: 100% 180px; } }
+  @media screen and (max-width: 568px) {
     .hotels {
-      height: 250px;
-      background-size: 100% 220px; } }
+      height: 290px;
+      background-size: 100% 170px; } }
   .hotels h2 {
     position: absolute;
     top: 2%;
@@ -379,13 +379,18 @@ body {
         font-size: 35px;
         left: 13%;
         margin-top: 20px; } }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 658px) {
       .hotels h2 {
         font-size: 30px;
         left: 11%;
         margin-top: 18px; } }
-    @media screen and (max-width: 518px) {
+    @media screen and (max-width: 568px) {
       .hotels h2 {
+        font-size: 26px;
+        margin-top: 17px; } }
+    @media screen and (max-width: 505px) {
+      .hotels h2 {
+        left: 9%;
         font-size: 24px; } }
 
 .hotel1 {
@@ -406,35 +411,28 @@ body {
   @media screen and (max-width: 804px) {
     .hotel1 {
       width: 74%;
-      height: 68%;
+      height: 60%;
       top: 25%;
       left: 13%; } }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 658px) {
     .hotel1 {
       width: 78%;
-      height: 72%;
+      height: 54%;
       left: 11%;
       top: 23%; } }
-  @media screen and (max-width: 518px) {
+  @media screen and (max-width: 568px) {
     .hotel1 {
-      height: 68%; } }
+      height: 58%; } }
+  @media screen and (max-width: 505px) {
+    .hotel1 {
+      width: 82%;
+      left: 9%; } }
   .hotel1 img {
-    width: 45%;
+    width: 50%;
+    height: 100%;
     float: left; }
-    @media screen and (max-width: 930px) {
-      .hotel1 img {
-        height: 75%; } }
-    @media screen and (max-width: 804px) {
-      .hotel1 img {
-        height: 70%; } }
-    @media screen and (max-width: 600px) {
-      .hotel1 img {
-        height: 60%; } }
-    @media screen and (max-width: 518px) {
-      .hotel1 img {
-        height: 65%; } }
   .hotel1 .hotel1-desc {
-    width: 55%;
+    width: 50%;
     float: left; }
     .hotel1 .hotel1-desc h3 {
       margin: 5px auto 0;
@@ -449,10 +447,10 @@ body {
         .hotel1 .hotel1-desc h3 {
           font-size: 20px;
           margin: 4px auto 0; } }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 658px) {
         .hotel1 .hotel1-desc h3 {
           font-size: 18px; } }
-      @media screen and (max-width: 518px) {
+      @media screen and (max-width: 505px) {
         .hotel1 .hotel1-desc h3 {
           font-size: 16x; } }
 
@@ -465,7 +463,7 @@ body {
 .desc1 {
   display: flex;
   justify-content: center;
-  margin: 3px auto; }
+  margin: 1px auto; }
   .desc1 h4 {
     font-size: 19px;
     margin: 0;
@@ -477,12 +475,9 @@ body {
     @media screen and (max-width: 804px) {
       .desc1 h4 {
         font-size: 16px; } }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 658px) {
       .desc1 h4 {
         font-size: 14px; } }
-    @media screen and (max-width: 518px) {
-      .desc1 h4 {
-        font-size: 13px; } }
   .desc1 p {
     margin: 4px 0 0 4px;
     font-family: "Grenze", serif;
@@ -496,21 +491,15 @@ body {
       .desc1 p {
         font-size: 14px;
         margin: 2px 0 0 3px; } }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 658px) {
       .desc1 p {
         font-size: 13px;
         margin-top: 1px; } }
-    @media screen and (max-width: 518px) {
-      .desc1 p {
-        font-size: 12px; } }
   .desc1 input {
     border: 0;
     border-bottom: 1px solid black;
     width: 40px;
     margin-left: 4px; }
-    @media screen and (max-width: 518px) {
-      .desc1 input {
-        width: 30px; } }
   .desc1 input:focus {
     outline: none; }
 
@@ -524,6 +513,9 @@ body {
     display: flex;
     padding: 8px 15px;
     justify-content: center; }
+    @media screen and (max-width: 568px) {
+      .atc-btn .atc {
+        padding: 6px 13px; } }
     .atc-btn .atc p {
       font-size: 18px;
       margin: 7px 0;
@@ -538,12 +530,9 @@ body {
           font-size: 15px;
           margin: 5px 0;
           font-weight: 400; } }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 658px) {
         .atc-btn .atc p {
           font-size: 13px; } }
-      @media screen and (max-width: 518px) {
-        .atc-btn .atc p {
-          font-size: 11px; } }
     .atc-btn .atc img {
       width: 25px;
       height: 25px;
@@ -557,14 +546,10 @@ body {
           width: 20px;
           height: 20px;
           margin-top: 4px; } }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 658px) {
         .atc-btn .atc img {
           width: 18px;
           height: 18px; } }
-      @media screen and (max-width: 518px) {
-        .atc-btn .atc img {
-          width: 16px;
-          height: 16px; } }
 
 .flex-video {
   height: 0;
@@ -670,6 +655,9 @@ body {
 .main-wrapper {
   width: 75%;
   margin: 0 auto; }
+  @media screen and (max-width: 1024px) {
+    .main-wrapper {
+      width: 100%; } }
   @media screen and (max-width: 804px) {
     .main-wrapper {
       margin: 150px auto 0; } }
