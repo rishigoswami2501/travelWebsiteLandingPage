@@ -1,3 +1,17 @@
+#hotel
+    display: block
+    width: 100%
+    height: 470px
+    position: relative
+    @media screen and ( max-width:930px)
+        height: 420px
+    @media screen and ( max-width:804px)
+        height: 380px
+    @media screen and ( max-width: 658px)
+        height: 340px
+    @media screen and ( max-width: 560px )
+        height: 310px
+            
 .hotels
     position: relative
     background: url("../img/blueClippedBackground.svg") no-repeat
@@ -57,6 +71,7 @@
     top: 30%
     left: 20%
     border: 1px solid #000000
+    box-shadow: 0 7px 7px -3px rgba(0,0,0,0.5 )
     @media screen and ( max-width: 930px )
         width: 66%
         height: 64%
@@ -205,4 +220,65 @@
                 width: 18px
                 height: 18px
            
-                    
+#search-hotels
+    position: absolute
+    left: 20%
+    bottom: 4%
+    display: flex
+    flex-wrap: nowrap
+    justify-content: center
+    width: 60%
+    @media screen and ( max-width: 930px )
+        width: 66%
+        left: 17%
+    @media screen and ( max-width:804px  )
+        width: 74%
+        left: 13%
+        bottom: 6%
+    @media screen and ( max-width: 658px )
+        width: 78%
+        left: 11%
+        bottom: 7% 
+    @media screen and ( max-width: 505px )
+        width: 82%
+        left: 9%
+
+    input
+        width: 65%
+        &:focus
+            outline: none       
+    button
+        width: 35%
+        padding: 5px 0
+        background-color: $btnclr
+        @media screen and ( max-width:720px )
+            padding: 4px 0
+
+#search-hotel-btn
+    display: grid
+    grid-template-columns: repeat(2,auto)
+    justify-content: center
+    align-items: center
+
+    p
+        margin: 0
+        color: $white
+        font-family: sans-serif
+        font-size: 16px
+        @media screen and ( max-width: 804px )
+            font-weight: 400
+            font-size: 15px
+        @media screen and ( max-width:768px  )
+            font-size: 14px
+        @media screen and ( max-width:560px  )
+            font-size: 12px        
+    img
+        width: 25px
+        height: 35px
+        @media screen and ( max-width: 768px )
+            width: 22px
+            height: 32px
+        @media screen and ( max-width:560px  )
+            width: 20px
+            height: 20px
+                                                      

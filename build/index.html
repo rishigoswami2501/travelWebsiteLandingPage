@@ -81,81 +81,205 @@
   </section>
   <section class="main">
     <div class="main-wrapper">
-      <div class="hotels">
-        <h2>Plan Your Trip</h2>
-        <div class="hotel1">
-          <img src="../assets/img/hotel1.jpg" alt="Hotel 1">
-          <div class="hotel1-desc">
-            <h3>Oberoi Hotel</h3>
-            <div class="desc1">
-              <h4>Location:</h4>
-              <p>New Delhi</p>
+      <section id="hotel">
+          <div class="hotels">
+            <h2>Plan Your Trip</h2>
+            <div class="hotel1">
+              <img src="../assets/img/hotel1.jpg" alt="Hotel 1">
+              <div class="hotel1-desc">
+                <h3>Oberoi Hotel</h3>
+                <div class="desc1">
+                  <h4>Location:</h4>
+                  <p>New Delhi</p>
+                </div>
+                <div class="desc1">
+                  <h4>Price:</h4>
+                  <p>1000$/Night</p>
+                </div>
+                <div class="desc1">
+                  <h4>Number of Nights:</h4>
+                  <input type="text" placeholder="e.g., 2" required>
+                </div>
+                <button class="atc-btn">
+                  <div class="atc">
+                    <p>Add To cart</p>
+                    <img src="assets/img/cart.svg" alt="Add To Cart">
+                  </div>
+                </button>
+              </div>
             </div>
-            <div class="desc1">
-              <h4>Price:</h4>
-              <p>1000$/Night</p>
+            <div class="hotel1 hotel2">
+              <img src="../assets/img/hotel2.jpg" alt="Hotel 2">
+              <div class="hotel1-desc">
+                <h3>JW Marriott Hotels</h3>
+                <div class="desc1">
+                  <h4>Location:</h4>
+                  <p>Chandigarh</p>
+                </div>
+                <div class="desc1">
+                  <h4>Price:</h4>
+                  <p>750$/Night</p>
+                </div>
+                <div class="desc1">
+                  <h4>Number of Nights:</h4>
+                  <input type="text" placeholder="e.g., 2" required>
+                </div>
+                <button class="atc-btn">
+                  <div class="atc">
+                    <p>Add To cart</p>
+                    <img src="assets/img/cart.svg" alt="Add To Cart">
+                  </div>
+                </button>
+              </div>
             </div>
-            <div class="desc1">
-              <h4>Number of Nights:</h4>
-              <input type="text" placeholder="e.g., 2" required>
+            <div class="hotel1 hotel3">
+              <img src="../assets/img/hotel3.jpg" alt="Hotel 3">
+              <div class="hotel1-desc">
+                <h3>Taj Hotel</h3>
+                <div class="desc1">
+                  <h4>Location:</h4>
+                  <p>Mumbai</p>
+                </div>
+                <div class="desc1">
+                  <h4>Price:</h4>
+                  <p>1100$/Night</p>
+                </div>
+                <div class="desc1">
+                  <h4>Number of Nights:</h4>
+                  <input type="text" placeholder="e.g., 2" required>
+                </div>
+                <button class="atc-btn">
+                  <div class="atc">
+                    <p>Add To cart</p>
+                    <img src="assets/img/cart.svg" alt="Add To Cart">
+                  </div>
+                </button>
+              </div>
             </div>
-            <button class="atc-btn">
-              <div class="atc">
-                <p>Add To cart</p>
-                <img src="assets/img/cart.svg" alt="Add To Cart">
+          </div>
+          <div id="search-hotels">
+            <input type="search" name="Hotel Search" id="hotel-search" placeholder="Search For Hotel, City or Locality">
+            <button type="button">
+              <div id="search-hotel-btn">
+                <p>Search Hotels</p>
+                <img src="assets/img/Hotel.svg" alt="Hotel Search">
+              </div>
+            </button>
+          </div>
+      </section>
+      <section id="discount">
+        <div class="discount-section-wrapper">
+          <p style="font-family: 'Roboto', sans-serif; font-weight: bold;">Discount:</p>
+          <p style="font-family: sans-serif">Get 20% OFF coupon at your email.</p>
+          <div id="email">
+            <input type="email" name="Email" id="email-id" placeholder="Enter your email.">
+            <button type="button">
+              <div id="send-email-btn">
+                <p>Send me!!</p>
+                <img src="assets/img/Email.svg" alt="Send email">
               </div>
             </button>
           </div>
         </div>
-        <div class="hotel1 hotel2">
-          <img src="../assets/img/hotel2.jpg" alt="Hotel 2">
-          <div class="hotel1-desc">
-            <h3>JW Marriott Hotels</h3>
-            <div class="desc1">
-              <h4>Location:</h4>
-              <p>Chandigarh</p>
-            </div>
-            <div class="desc1">
-              <h4>Price:</h4>
-              <p>750$/Night</p>
-            </div>
-            <div class="desc1">
-              <h4>Number of Nights:</h4>
-              <input type="text" placeholder="e.g., 2" required>
-            </div>
-            <button class="atc-btn">
-              <div class="atc">
-                <p>Add To cart</p>
-                <img src="assets/img/cart.svg" alt="Add To Cart">
+      </section>
+      <section id="flight-booking">
+        <div class="flight-booking-wrapper">
+          <div class="booking-info-left">
+              <img src="assets/img/flightbooking.jpg" alt="Book Your Flight">
+              <div class="trip">
+                <div class="trip-way">
+                  <p for="one-way">One Way</p>
+                  <label class="radio-btn">
+                    <input type="radio" name="trip" value="One Way" checked="checked">
+                    <span class="radio"></span>
+                  </label>
+                </div>
+                <div class="trip-way">
+                  <p for="round-trip">Round Trip</p>
+                  <label class="radio-btn">
+                    <input type="radio" name="trip" value="Round Trip">
+                    <span class="radio"></span>
+                  </label>
+                </div>
+                <div class="trip-way">
+                  <p for="multi city">Multi City</p>
+                  <label class="radio-btn">
+                    <input type="radio" name="trip" value="Multi City">
+                    <span class="radio"></span>
+                  </label>
+                </div>
               </div>
+              <div class="category">
+                <div class="individual-category">
+                  <p for="armed-forces">Armed Forces</p>
+                  <label class="radio-btn">
+                    <input type="radio" name="category" value="Armed Forces">
+                    <span class="radio"></span>
+                  </label>
+                </div>
+                <div class="individual-category">
+                  <p for="senior-citizen">Senior Citizen</p>
+                  <label class="radio-btn">
+                    <input type="radio" name="category" value="Senior Citizen">
+                    <span class="radio"></span>
+                  </label>
+                </div>
+                <div class="individual-category">
+                  <p for="friends-family">Friends & Family</p>
+                  <label class="radio-btn">
+                    <input type="radio" name="category" value="Friends & Family">
+                    <span class="radio"></span>
+                  </label>
+                </div>
+                <div class="individual-category">
+                  <p for="student">Student</p>
+                  <lebel class="radio-btn">
+                    <input type="radio" name="category" value="Student"> 
+                    <span class="radio"></span>
+                  </lebel>
+                </div>
+                <div class="individual-category">
+                  <p for="minor">Minor</p>
+                  <label class="radio-btn">
+                    <input type="radio" name="category" value="Minor">
+                    <span class="radio"></span>
+                  </label>
+                </div>
+              </div>
+          </div>
+          <div class="booking-info-right">
+            <div class="flight-search-info-container">
+              <div class="flight-search-info">
+                <label for="from">From</label>
+                <input type="text">
+              </div>
+              <div class="flight-search-info">
+                <label for="to">To</label>
+                <input type="text">
+              </div>
+              <div class="flight-search-info">
+                <label for="passengers">Passenger(s)</label>
+                <input type="text">
+              </div>
+              <div class="flight-search-info">
+                <label for="departure-date">Departure Date</label>
+                <input type="date">
+              </div>
+              <div class="flight-search-info">
+                <label for="return-date">Return Date</label>
+                <input type="date">
+              </div>
+            </div>
+            <button class="flight-search-btn">
+              <p>Search Flight</p>
+              <img src="assets/img/Flight.svg" alt="Search Flight">
             </button>
           </div>
         </div>
-        <div class="hotel1 hotel3">
-          <img src="../assets/img/hotel3.jpg" alt="Hotel 3">
-          <div class="hotel1-desc">
-            <h3>Taj Hotel</h3>
-            <div class="desc1">
-              <h4>Location:</h4>
-              <p>Mumbai</p>
-            </div>
-            <div class="desc1">
-              <h4>Price:</h4>
-              <p>1100$/Night</p>
-            </div>
-            <div class="desc1">
-              <h4>Number of Nights:</h4>
-              <input type="text" placeholder="e.g., 2" required>
-            </div>
-            <button class="atc-btn">
-              <div class="atc">
-                <p>Add To cart</p>
-                <img src="assets/img/cart.svg" alt="Add To Cart">
-              </div>
-            </button>
-          </div>
-        </div>
-      </div>
+      </section>
+      <section id="market-place">
+
+      </section>
     </div>
   </section>
 

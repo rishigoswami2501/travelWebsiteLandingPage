@@ -240,6 +240,55 @@ input[type="button"] {
     transform: scale(1.01);
     transform: translateY(3px); }
 
+.radio-btn {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none; }
+
+.radio-btn input {
+  position: absolute;
+  top: 5px;
+  right: -4px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 1; }
+
+.radio {
+  position: absolute;
+  top: 0;
+  left: -14px;
+  height: 24px;
+  width: 24px;
+  background-color: #BABCBF;
+  border-radius: 50%; }
+
+.radio-btn:hover input ~ .radio {
+  background-color: #5C6373; }
+
+.radio-btn input:checked ~ .radio {
+  background-color: #273fad; }
+
+.radio:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+.radio-btn input:checked ~ .radio:after {
+  display: block; }
+
+.radio-btn .radio:after {
+  top: 6px;
+  left: 6px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #fff; }
+
 a {
   color: #0074D9;
   text-decoration: none;
@@ -342,6 +391,24 @@ body {
         .card .card1 span {
           font-size: 10px; } }
 
+#hotel {
+  display: block;
+  width: 100%;
+  height: 470px;
+  position: relative; }
+  @media screen and (max-width: 930px) {
+    #hotel {
+      height: 420px; } }
+  @media screen and (max-width: 804px) {
+    #hotel {
+      height: 380px; } }
+  @media screen and (max-width: 658px) {
+    #hotel {
+      height: 340px; } }
+  @media screen and (max-width: 560px) {
+    #hotel {
+      height: 310px; } }
+
 .hotels {
   position: relative;
   background: url("../img/blueClippedBackground.svg") no-repeat;
@@ -401,7 +468,8 @@ body {
   position: absolute;
   top: 30%;
   left: 20%;
-  border: 1px solid #000000; }
+  border: 1px solid #000000;
+  box-shadow: 0 7px 7px -3px rgba(0, 0, 0, 0.5); }
   @media screen and (max-width: 930px) {
     .hotel1 {
       width: 66%;
@@ -550,6 +618,305 @@ body {
         .atc-btn .atc img {
           width: 18px;
           height: 18px; } }
+
+#search-hotels {
+  position: absolute;
+  left: 20%;
+  bottom: 4%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 60%; }
+  @media screen and (max-width: 930px) {
+    #search-hotels {
+      width: 66%;
+      left: 17%; } }
+  @media screen and (max-width: 804px) {
+    #search-hotels {
+      width: 74%;
+      left: 13%;
+      bottom: 6%; } }
+  @media screen and (max-width: 658px) {
+    #search-hotels {
+      width: 78%;
+      left: 11%;
+      bottom: 7%; } }
+  @media screen and (max-width: 505px) {
+    #search-hotels {
+      width: 82%;
+      left: 9%; } }
+  #search-hotels input {
+    width: 65%; }
+    #search-hotels input:focus {
+      outline: none; }
+  #search-hotels button {
+    width: 35%;
+    padding: 5px 0;
+    background-color: #273fad; }
+    @media screen and (max-width: 720px) {
+      #search-hotels button {
+        padding: 4px 0; } }
+
+#search-hotel-btn {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  align-items: center; }
+  #search-hotel-btn p {
+    margin: 0;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 16px; }
+    @media screen and (max-width: 804px) {
+      #search-hotel-btn p {
+        font-weight: 400;
+        font-size: 15px; } }
+    @media screen and (max-width: 768px) {
+      #search-hotel-btn p {
+        font-size: 14px; } }
+    @media screen and (max-width: 560px) {
+      #search-hotel-btn p {
+        font-size: 12px; } }
+  #search-hotel-btn img {
+    width: 25px;
+    height: 35px; }
+    @media screen and (max-width: 768px) {
+      #search-hotel-btn img {
+        width: 22px;
+        height: 32px; } }
+    @media screen and (max-width: 560px) {
+      #search-hotel-btn img {
+        width: 20px;
+        height: 20px; } }
+
+#discount {
+  height: 160px;
+  width: 100%;
+  padding-top: 30px; }
+
+.discount-section-wrapper {
+  width: 60%;
+  margin: 0 auto; }
+  @media screen and (max-width: 930px) {
+    .discount-section-wrapper {
+      width: 66%; } }
+  @media screen and (max-width: 804px) {
+    .discount-section-wrapper {
+      width: 74%; } }
+  @media screen and (max-width: 658px) {
+    .discount-section-wrapper {
+      width: 78%; } }
+  @media screen and (max-width: 505px) {
+    .discount-section-wrapper {
+      width: 82%; } }
+  .discount-section-wrapper p {
+    font-size: 22px;
+    float: left;
+    margin: 0 0 22px 0; }
+    @media screen and (max-width: 930px) {
+      .discount-section-wrapper p {
+        font-size: 22px; } }
+    @media screen and (max-width: 804px) {
+      .discount-section-wrapper p {
+        font-size: 20px; } }
+    @media screen and (max-width: 658px) {
+      .discount-section-wrapper p {
+        font-size: 18px; } }
+    @media screen and (max-width: 505px) {
+      .discount-section-wrapper p {
+        font-size: 16x; } }
+
+#email {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  width: 100%; }
+  #email button {
+    padding: 5px 0;
+    background-color: #273fad; }
+
+#send-email-btn {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center; }
+  #send-email-btn p {
+    color: #fff;
+    margin: 0;
+    font-size: 16px; }
+    @media screen and (max-width: 804px) {
+      #send-email-btn p {
+        font-weight: 400;
+        font-size: 15px; } }
+    @media screen and (max-width: 768px) {
+      #send-email-btn p {
+        font-size: 14px; } }
+    @media screen and (max-width: 560px) {
+      #send-email-btn p {
+        font-size: 12px; } }
+  #send-email-btn img {
+    width: 35px;
+    height: 30px; }
+    @media screen and (max-width: 768px) {
+      #send-email-btn img {
+        width: 32px;
+        height: 27px; } }
+    @media screen and (max-width: 560px) {
+      #send-email-btn img {
+        width: 25px;
+        height: 20px; } }
+
+#flight-booking {
+  width: 100%;
+  height: 620px;
+  box-shadow: 5px 10px 10px -2px rgba(0, 0, 0, 0.5); }
+  @media screen and (max-width: 820px) {
+    #flight-booking {
+      height: 550px; } }
+  @media screen and (max-width: 768px) {
+    #flight-booking {
+      height: 510px; } }
+  @media screen and (max-width: 560px) {
+    #flight-booking {
+      height: 470px; } }
+
+.flight-booking-wrapper {
+  width: 100%;
+  display: flex;
+  border: 1px solid black; }
+
+.booking-info-left {
+  width: 40%; }
+  .booking-info-left img {
+    width: 100%; }
+
+.trip {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px; }
+
+.trip-way {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-items: center; }
+  .trip-way p {
+    font-size: 16px; }
+    @media screen and (max-width: 1124px) {
+      .trip-way p {
+        font-size: 14px; } }
+    @media screen and (max-width: 768px) {
+      .trip-way p {
+        font-size: 12px; } }
+
+.category {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-row-gap: 40px;
+  margin-top: 60px; }
+
+.individual-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .individual-category p {
+    text-align: center;
+    font-size: 16px; }
+    @media screen and (max-width: 1124px) {
+      .individual-category p {
+        font-size: 14px; } }
+    @media screen and (max-width: 768px) {
+      .individual-category p {
+        font-size: 12px; } }
+
+.booking-info-right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+
+.flight-search-info-container {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  grid-row-gap: 2em;
+  width: 80%; }
+  @media screen and (max-width: 640px) {
+    .flight-search-info-container {
+      width: 90%; } }
+
+.flight-search-info {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  width: 100%; }
+  .flight-search-info label {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500; }
+    @media screen and (max-width: 804px) {
+      .flight-search-info label {
+        font-size: 18px; } }
+    @media screen and (max-width: 768px) {
+      .flight-search-info label {
+        font-size: 16px; } }
+    @media screen and (max-width: 640px) {
+      .flight-search-info label {
+        font-size: 14px; } }
+  .flight-search-info input {
+    font-size: 20px;
+    width: 100%; }
+    @media screen and (max-width: 804px) {
+      .flight-search-info input {
+        font-size: 18px; } }
+    @media screen and (max-width: 768px) {
+      .flight-search-info input {
+        font-size: 16px; } }
+    @media screen and (max-width: 640px) {
+      .flight-search-info input {
+        font-size: 14px; } }
+  .flight-search-info input:focus {
+    outline: none; }
+
+.flight-search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #273fad;
+  padding: 18px 32px;
+  margin: 0; }
+  @media screen and (max-width: 804px) {
+    .flight-search-btn {
+      padding: 16px 28px; } }
+  @media screen and (max-width: 768px) {
+    .flight-search-btn {
+      padding: 14px 26px; } }
+  @media screen and (max-width: 560px) {
+    .flight-search-btn {
+      padding: 10px 20px; } }
+  .flight-search-btn p {
+    margin: 0;
+    color: #fff;
+    font-size: 16px; }
+    @media screen and (max-width: 804px) {
+      .flight-search-btn p {
+        font-size: 15px;
+        font-weight: 400; } }
+    @media screen and (max-width: 768px) {
+      .flight-search-btn p {
+        font-size: 14px; } }
+    @media screen and (max-width: 560px) {
+      .flight-search-btn p {
+        font-size: 12px; } }
+  .flight-search-btn img {
+    width: 65px;
+    height: 45px; }
+    @media screen and (max-width: 804px) {
+      .flight-search-btn img {
+        width: 45px;
+        height: 30px; } }
+
+#market-place {
+  width: 100%;
+  height: 400px; }
 
 .flex-video {
   height: 0;
