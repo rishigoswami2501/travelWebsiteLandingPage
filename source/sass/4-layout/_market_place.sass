@@ -1,3 +1,135 @@
 #market-place
+    position: relative
+    display: block
     width: 100%
-    height: 400px
+    height: 500px
+    margin-top: 80px
+    background:  url("../img/blueClippedBackground.svg") no-repeat
+    background-size: 100% 280px
+    @media screen and ( max-width: 600px )
+        background-size: 100% 260px
+
+
+.market-place-wrapper
+    height: 440px
+    width: 70%
+    margin: 0 auto
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: flex-start
+    @media screen and ( max-width: 1064px )
+        width: 80%
+    @media screen and ( max-width:676px  )
+        width: 85%
+    @media screen and ( max-width: 608px )
+        width: 90%             
+    h2
+        color: #ffffff
+        font-family: 'Roboto', sans-serif
+        font-weight: 700
+        font-style: italic
+        font-size: 40px
+        @media screen and ( max-width:  804px)
+            font-size: 35px
+            margin-top: 20px
+        @media screen and ( max-width: 658px )
+            font-size: 30px
+            margin-top: 18px
+        @media screen and ( max-width:568px  )
+            font-size: 26px
+            margin-top: 17px
+        @media screen and ( max-width: 505px )
+            font-size: 24px
+
+.market-place1
+    width: 100%
+    height: 70%
+    border: 1px solid rgba(0,0,0,1)
+    background-color: #fff
+    display: flex
+    box-shadow: 5px 10px 4px -4px rgba(0,0,0,0.5)
+    @media screen and ( max-width: 1024px )
+        height: 80%
+    @media screen and ( max-width: 804px )
+        height: 62%
+    @media screen and ( max-width: 608px )
+        height: 60%         
+.market-place1-left
+    width: 50%
+    img
+        width: 100%
+        border-bottom: 1px solid rgba(0,0,0 ,1)
+    article
+        display: grid
+        grid-template-columns: repeat(2,auto)
+        justify-content: center
+        grid-column-gap: 10px
+        p
+            margin: 0
+            font-size: 18px
+            font-weight: bold
+            font-family: $greenzy
+        span
+            align-self: center
+            font-family: $mali
+
+.mrp
+    text-decoration: line-through            
+.market-place1-right
+    width: 50%
+    border-left: 1px solid black
+.product-desc
+    h3
+        margin: 5px auto 0
+        text-align: center
+        font-size: 26px
+        font-family: $roboto
+        text-decoration: underline
+        @media screen and ( max-width: 930px )
+            font-size: 22px
+        @media screen and ( max-width: 804px )
+            font-size: 20px
+            margin: 4px auto 0
+        @media screen and ( max-width: 658px )
+            font-size: 18px
+        @media screen and ( max-width:505px)
+            font-size: 16x
+                
+.feature-bullets
+    padding-right: 20px
+    @media screen and ( max-width: 546px )
+        padding-right: 10px
+                  
+.unodered-list
+    @media screen and ( max-width: 632px )
+        padding-left: 30px
+    @media screen and ( max-width: 546px )
+        padding-left: 20px
+    li
+    font-family: $greenzy
+    font-size: 16px 
+    line-height: 1.3em
+    @media screen and ( max-width: 1024px )
+        font-size: 18px
+    @media screen and ( max-width: 804px )
+        font-size: 15px
+    @media screen and ( max-width: 608px )
+        font-size: 14px
+    @media screen and ( max-width: 546px  )
+        font-size: 13.5px               
+
+
+.market-place2
+    display: none
+
+#a-more
+    display: block
+    margin-top: 20px 
+    position: absolute
+    bottom: 0
+    right: 2%   
+#more
+    font-size: 22px
+    font-family: $greenzy
+    color: $btnclr     
