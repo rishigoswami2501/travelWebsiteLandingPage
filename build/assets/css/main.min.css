@@ -981,6 +981,9 @@ body {
   @media screen and (max-width: 608px) {
     .market-place1 {
       height: 60%; } }
+  @media screen and (max-width: 546px) {
+    .market-place1 {
+      height: 50%; } }
 
 .market-place1-left {
   width: 50%; }
@@ -1055,7 +1058,7 @@ body {
       font-size: 14px; } }
   @media screen and (max-width: 546px) {
     .unodered-list {
-      font-size: 13.5px; } }
+      font-size: 12px; } }
 
 .market-place2 {
   display: none; }
@@ -1071,6 +1074,187 @@ body {
   font-size: 22px;
   font-family: "Grenze", serif;
   color: #273fad; }
+
+#customer-review {
+  display: block;
+  height: 450px;
+  width: 100%;
+  background: url("../img/blueClippedBackground.svg") no-repeat;
+  background-size: 100% 260px; }
+  @media screen and (max-width: 804px) {
+    #customer-review {
+      height: 400px; } }
+  @media screen and (max-width: 720px) {
+    #customer-review {
+      height: 320px; } }
+  @media screen and (max-width: 627px) {
+    #customer-review {
+      background-size: 100% 220px; } }
+  @media screen and (max-width: 568px) {
+    #customer-review {
+      height: 280px; } }
+
+.customer-review-wrapper {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template: "h2 h2" 20% "customer-review customer-review" 80%/1fr; }
+  @media screen and (max-width: 627px) {
+    .customer-review-wrapper {
+      width: 80%; } }
+  .customer-review-wrapper h2 {
+    grid-area: h2;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 40px; }
+    @media screen and (max-width: 804px) {
+      .customer-review-wrapper h2 {
+        font-size: 35px;
+        margin-top: 20px; } }
+    @media screen and (max-width: 658px) {
+      .customer-review-wrapper h2 {
+        font-size: 30px;
+        margin-top: 18px; } }
+    @media screen and (max-width: 568px) {
+      .customer-review-wrapper h2 {
+        font-size: 26px;
+        margin-top: 17px; } }
+    @media screen and (max-width: 505px) {
+      .customer-review-wrapper h2 {
+        font-size: 24px; } }
+
+.customer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+  border: 1px solid black;
+  box-shadow: 5px 10px 4px -4px rgba(0, 0, 0, 0.5);
+  margin-top: 40px;
+  background: #ffffff;
+  grid-area: customer-review; }
+  @media screen and (max-width: 658px) {
+    .customer {
+      margin-top: 20px; } }
+  @media screen and (max-width: 568px) {
+    .customer {
+      height: 80%; } }
+
+.customer1 {
+  display: flex; }
+
+.customer2 {
+  display: none; }
+
+.customer3 {
+  display: none; }
+
+.customer4 {
+  display: none; }
+
+.customer-review-box {
+  height: 90%;
+  width: 95%;
+  border: 1px solid black;
+  display: flex; }
+  .customer-review-box img {
+    height: 100%; }
+
+.customer-review {
+  height: 100%;
+  width: 100%;
+  border-left: 1px solid black; }
+  .customer-review h3 {
+    text-align: center;
+    margin: 5px auto 0;
+    text-align: center;
+    font-size: 26px;
+    font-family: "Roboto", sans-serif;
+    text-decoration: underline; }
+    @media screen and (max-width: 930px) {
+      .customer-review h3 {
+        font-size: 22px; } }
+    @media screen and (max-width: 804px) {
+      .customer-review h3 {
+        font-size: 20px;
+        margin: 4px auto 0; } }
+    @media screen and (max-width: 658px) {
+      .customer-review h3 {
+        font-size: 18px; } }
+    @media screen and (max-width: 505px) {
+      .customer-review h3 {
+        font-size: 16x; } }
+  .customer-review p {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Mali", cursive; }
+    @media screen and (max-width: 1124px) {
+      .customer-review p {
+        font-size: 14px; } }
+    @media screen and (max-width: 700px) {
+      .customer-review p {
+        font-size: 12px; } }
+
+#value-preposition {
+  display: block;
+  height: 300px;
+  width: 100%; }
+  @media screen and (max-width: 1024px) {
+    #value-preposition {
+      height: 260px; } }
+
+.value-preposition-wrapper {
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template: "h2 h2" 20% "value-preposition value-preposition" 80%/1fr; }
+  @media screen and (max-width: 627px) {
+    .value-preposition-wrapper {
+      width: 80%; } }
+  .value-preposition-wrapper h2 {
+    grid-area: h2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 40px;
+    margin: 0;
+    align-self: center; }
+    @media screen and (max-width: 804px) {
+      .value-preposition-wrapper h2 {
+        font-size: 35px; } }
+    @media screen and (max-width: 658px) {
+      .value-preposition-wrapper h2 {
+        font-size: 30px; } }
+    @media screen and (max-width: 568px) {
+      .value-preposition-wrapper h2 {
+        font-size: 26px; } }
+    @media screen and (max-width: 505px) {
+      .value-preposition-wrapper h2 {
+        font-size: 24px; } }
+
+.value-preposition-box {
+  grid-area: value-preposition;
+  border: 1px solid black;
+  box-shadow: 5px 10px 4px -4px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  align-self: start; }
+  .value-preposition-box p {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Grenze", serif;
+    margin: 0; }
+    @media screen and (max-width: 1124px) {
+      .value-preposition-box p {
+        font-size: 14px; } }
+    @media screen and (max-width: 700px) {
+      .value-preposition-box p {
+        font-size: 12px; } }
 
 .flex-video {
   height: 0;

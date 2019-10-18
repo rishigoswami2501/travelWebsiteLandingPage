@@ -1,0 +1,106 @@
+#customer-review
+    display: block
+    height: 450px
+    width: 100%
+    background: url('../img/blueClippedBackground.svg') no-repeat
+    background-size: 100% 260px 
+    @media screen and ( max-width: 804px )
+        height: 400px
+    @media screen and ( max-width: 720px )
+        height: 320px
+    @media screen and ( max-width: 627px )
+        background-size: 100% 220px
+    @media screen and ( max-width: 568px )
+        height: 280px            
+
+.customer-review-wrapper
+    width: 60%
+    height: 100%
+    margin: 0 auto
+    display: grid
+    grid-template: "h2 h2"20% "customer-review customer-review"80% / 1fr
+    @media screen and ( max-width: 627px )
+        width: 80%
+    h2
+        grid-area: h2
+        color: #ffffff
+        font-family: 'Roboto', sans-serif
+        font-weight: 700
+        font-style: italic
+        font-size: 40px
+        @media screen and ( max-width:  804px)
+            font-size: 35px
+            margin-top: 20px
+        @media screen and ( max-width: 658px )
+            font-size: 30px
+            margin-top: 18px
+        @media screen and ( max-width:568px  )
+            font-size: 26px
+            margin-top: 17px
+        @media screen and ( max-width: 505px )
+            font-size: 24px
+
+.customer
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 70%
+    border: 1px solid black
+    box-shadow: 5px 10px 4px -4px rgba(0,0,0,0.5)
+    margin-top: 40px
+    background: #ffffff
+    grid-area: customer-review 
+    @media screen and ( max-width:658px  )
+        margin-top: 20px
+    @media screen and ( max-width:568px  )
+        height: 80%          
+
+.customer1
+    display: flex     
+
+.customer2
+    display: none
+
+.customer3
+    display: none
+
+.customer4
+    display: none
+
+.customer-review-box
+    height: 90%
+    width: 95%
+    border: 1px solid rgba(0,0,0,1)
+    display: flex
+    img
+        height: 100%
+
+.customer-review
+    height: 100%
+    width: 100%
+    border-left: 1px solid black
+    h3
+        text-align: center
+        margin: 5px auto 0
+        text-align: center
+        font-size: 26px
+        font-family: $roboto
+        text-decoration: underline
+        @media screen and ( max-width: 930px )
+            font-size: 22px
+        @media screen and ( max-width: 804px )
+            font-size: 20px
+            margin: 4px auto 0
+        @media screen and ( max-width: 658px )
+            font-size: 18px
+        @media screen and ( max-width:505px)
+            font-size: 16x
+    p
+        text-align: center
+        font-size: 16px
+        font-family: $mali
+        @media screen and ( max-width:1124px )
+            font-size: 14px   
+        @media screen and ( max-width: 700px )
+            font-size: 12px                

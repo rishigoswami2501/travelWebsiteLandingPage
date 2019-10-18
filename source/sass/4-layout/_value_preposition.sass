@@ -1,0 +1,50 @@
+#value-preposition
+    display: block
+    height: 300px
+    width: 100%
+    @media screen and ( max-width:1024px  )
+        height: 260px
+
+.value-preposition-wrapper
+    height: 100%
+    width: 60%
+    margin: 0 auto
+    display: grid
+    grid-template: "h2 h2"20% "value-preposition value-preposition"80% /1fr
+    @media screen and ( max-width: 627px )
+        width: 80%  
+    h2
+        grid-area: h2
+        font-family: 'Roboto', sans-serif
+        font-weight: 700
+        font-style: italic
+        font-size: 40px
+        margin: 0
+        align-self: center
+        @media screen and ( max-width:  804px)
+            font-size: 35px
+        @media screen and ( max-width: 658px )
+            font-size: 30px
+        @media screen and ( max-width:568px  )
+            font-size: 26px
+        @media screen and ( max-width: 505px )
+            font-size: 24px
+
+.value-preposition-box
+    grid-area: value-preposition   
+    border: 1px solid rgba(0,0,0,1)
+    box-shadow: 5px 10px 4px -4px rgba(0,0,0,0.5)
+    padding: 10px
+    align-self: start
+     
+            
+    p
+        display: block
+        text-align: left
+        font-size: 16px
+        font-family: $greenzy
+        margin: 0
+        @media screen and ( max-width:1124px )
+            font-size: 14px   
+        @media screen and ( max-width: 700px )
+            font-size: 12px
