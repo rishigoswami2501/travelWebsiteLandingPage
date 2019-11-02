@@ -31,14 +31,19 @@ input[type="button"],
     padding: 0
     background: #0583F2
     width: 80%
-    margin: 5% 10% 0 10%
+    margin: 5% 10% 0
     background-color: rgb(39, 63, 173)
+    @media screen and ( max-width: 400px )
+      width: 90%
+      margin: 5% 5% 0
     .atc
         display: flex
         padding: 8px 15px
         justify-content: center
         @media screen and ( max-width: 568px )
-            padding: 6px 13px
+          padding: 6px 13px
+        @media screen and ( max-width: 430px )
+          padding: 0 13px    
         p
             font-size: 18px
             margin: 7px 0

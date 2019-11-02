@@ -1,26 +1,22 @@
 //HEADER
 
 #header
-    position: relative
-    min-height: 100vh
+    height: fit-content
+    display: flex
+    flex-flow: column nowrap
+    margin-bottom: 10px
         
 .wrapper
     background: url(../img/banner.svg) no-repeat
-    background-size: cover
-    height: 80vh
-    @media screen and ( max-width:1024px  )
-        height: 70vh
-    @media screen and ( max-width: 860px )
-        height: 65vh
-    @media screen and ( max-width:804px  )
-        height: 60vh    
-
+    background-size: 100%
+    height: fit-content
 
 #scrollDownBtn
-   width: 6%
-   position: absolute
-   bottom: 8%
-   left: 47%
+   display: block
+   width: 100%
+   margin: 3% auto
+   @media screen and ( max-width:1000px  )
+       margin: 2% auto
    @media screen and ( max-width:804px  )
     display: none 
 
@@ -37,8 +33,7 @@
     margin: 0 auto
     @media screen and ( max-width: 1024px )
         width: 100%
-    @media screen and ( max-width:804px  )
-        margin: 150px auto 0  
+   
 
 
 

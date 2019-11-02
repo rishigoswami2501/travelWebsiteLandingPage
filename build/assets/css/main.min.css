@@ -244,8 +244,12 @@ input[type="button"] {
   padding: 0;
   background: #0583F2;
   width: 80%;
-  margin: 5% 10% 0 10%;
+  margin: 5% 10% 0;
   background-color: #273fad; }
+  @media screen and (max-width: 400px) {
+    .atc-btn {
+      width: 90%;
+      margin: 5% 5% 0; } }
   .atc-btn .atc {
     display: flex;
     padding: 8px 15px;
@@ -253,6 +257,9 @@ input[type="button"] {
     @media screen and (max-width: 568px) {
       .atc-btn .atc {
         padding: 6px 13px; } }
+    @media screen and (max-width: 430px) {
+      .atc-btn .atc {
+        padding: 0 13px; } }
     .atc-btn .atc p {
       font-size: 18px;
       margin: 7px 0;
@@ -362,110 +369,160 @@ body {
 .main-nav {
   display: flex;
   margin-top: 20px; }
-  @media screen and (max-width: 710px) {
-    .main-nav .logo {
-      width: 160px;
-      height: 40px; } }
-  .main-nav li {
-    list-style: none; }
-  .main-nav li:first-child {
+  @media screen and (max-width: 530px) {
+    .main-nav {
+      margin-top: 10px; } }
+  @media screen and (max-width: 450px) {
+    .main-nav {
+      padding-left: 20px; } }
+  .main-nav .logo {
     margin-right: auto; }
     @media screen and (max-width: 710px) {
-      .main-nav li:first-child {
+      .main-nav .logo {
+        width: 160px;
+        height: 40px; } }
+    @media screen and (max-width: 470px) {
+      .main-nav .logo {
+        width: 140px;
+        height: 30px; } }
+    @media screen and (max-width: 750px) {
+      .main-nav .logo {
         margin: 0 auto; } }
-  .main-nav a {
-    display: block;
-    color: white;
-    border-radius: 2px;
-    padding: 1px 3px;
-    text-decoration: none;
-    font-weight: 600; }
-    @media screen and (max-width: 1024px) {
-      .main-nav a {
-        font-size: 13px;
-        padding: 1px 1.5px; } }
-    @media screen and (max-width: 860px) {
-      .main-nav a {
-        font-size: 10px; } }
-  .main-nav a:hover, .main-nav a:active {
-    color: #273fad; }
-  .main-nav li:nth-child(n+2) {
-    text-transform: uppercase;
+  .main-nav li {
+    list-style: none; }
+  .main-nav .nav-toggle {
+    display: none; }
+    @media screen and (max-width: 750px) {
+      .main-nav .nav-toggle {
+        margin-top: 15px; } }
+    @media screen and (max-width: 710px) {
+      .main-nav .nav-toggle {
+        margin-top: 10px; } }
+    @media screen and (max-width: 470px) {
+      .main-nav .nav-toggle {
+        margin-top: 7px; } }
+  .main-nav .responsive-nav {
+    display: flex; }
+    .main-nav .responsive-nav .nav-links {
+      text-transform: uppercase;
+      margin-top: 14px;
+      margin-right: 40px; }
+      @media screen and (max-width: 1024px) {
+        .main-nav .responsive-nav .nav-links {
+          margin-right: 20px; } }
+      @media screen and (max-width: 860px) {
+        .main-nav .responsive-nav .nav-links {
+          margin-top: 20px;
+          margin-right: 17px; } }
+      .main-nav .responsive-nav .nav-links a {
+        border: 1.3px solid #ffffff;
+        display: block;
+        color: white;
+        border-radius: 2px;
+        padding: 1px 3px;
+        text-decoration: none;
+        font-weight: 700; }
+        @media screen and (max-width: 1024px) {
+          .main-nav .responsive-nav .nav-links a {
+            font-size: 13px;
+            padding: 1px 1.5px; } }
+        @media screen and (max-width: 860px) {
+          .main-nav .responsive-nav .nav-links a {
+            font-size: 10px; } }
+      .main-nav .responsive-nav .nav-links a:hover, .main-nav .responsive-nav .nav-links a:active {
+        color: #273fad; }
+  .main-nav .shopping-cart {
+    margin-top: 9.2px;
     margin-right: 40px; }
     @media screen and (max-width: 1024px) {
-      .main-nav li:nth-child(n+2) {
+      .main-nav .shopping-cart {
         margin-right: 20px; } }
     @media screen and (max-width: 860px) {
-      .main-nav li:nth-child(n+2) {
+      .main-nav .shopping-cart {
         margin-right: 17px; } }
-  .main-nav li:nth-child(2), .main-nav li:nth-child(3), .main-nav li:nth-child(4), .main-nav li:nth-child(5), .main-nav li:nth-child(6) {
-    margin-top: 14px; }
-    @media screen and (max-width: 1024px) {
-      .main-nav li:nth-child(2), .main-nav li:nth-child(3), .main-nav li:nth-child(4), .main-nav li:nth-child(5), .main-nav li:nth-child(6) {
-        margin-top: 17px; } }
-    @media screen and (max-width: 860px) {
-      .main-nav li:nth-child(2), .main-nav li:nth-child(3), .main-nav li:nth-child(4), .main-nav li:nth-child(5), .main-nav li:nth-child(6) {
-        margin-top: 18px; } }
+    @media screen and (max-width: 470px) {
+      .main-nav .shopping-cart {
+        margin-top: 5px; } }
     @media screen and (max-width: 710px) {
-      .main-nav li:nth-child(2), .main-nav li:nth-child(3), .main-nav li:nth-child(4), .main-nav li:nth-child(5), .main-nav li:nth-child(6) {
-        display: none; } }
-  .main-nav li:last-child {
-    margin-top: 9.2px; }
-
-.border-nav-tag {
-  border: 1.3px solid #ffffff; }
+      .main-nav .shopping-cart a svg {
+        height: 25px;
+        width: 25px; } }
+    @media screen and (max-width: 470px) {
+      .main-nav .shopping-cart a svg {
+        height: 20px;
+        width: 20px; } }
+  @media screen and (max-width: 750px) {
+    .main-nav .responsive-nav {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      padding: 60px 20px;
+      background: #fff;
+      z-index: 1;
+      transition: all 1s linear; }
+    .main-nav .responsive-nav .nav-links {
+      display: block;
+      width: 100%; }
+    .main-nav .responsive-nav .nav-links a {
+      border: 0;
+      padding: 20px;
+      font-size: 18px;
+      color: #000000; }
+      .main-nav .responsive-nav .nav-links a:hover, .main-nav .responsive-nav .nav-links a:active {
+        background: #eeeeee;
+        transform: scale(1.3); }
+    .main-nav .nav-toggle {
+      display: block;
+      z-index: 2; }
+      .main-nav .nav-toggle a svg g rect {
+        fill: #fff; } }
 
 .card {
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  top: 45%;
-  left: 10%;
   width: 80%;
-  height: 250px; }
+  height: fit-content;
+  margin: 15% auto 0; }
   @media screen and (max-width: 860px) {
     .card {
-      width: 85%;
-      left: 7.5%; } }
+      width: 85%; } }
   @media screen and (max-width: 804px) {
     .card {
       flex-flow: wrap;
-      justify-content: center;
-      height: 455px; } }
+      justify-content: center; } }
   .card .card1 {
     position: relative;
     background: #ffffff;
-    height: 100%;
+    height: 250px;
     width: 200px;
-    border: 0.5px solid;
+    border: 0.5px solid #000000;
     padding: 5px;
-    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5); }
-    @media screen and (max-width: 1024px) {
-      .card .card1 {
-        margin: 0 5px; } }
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+    margin: 5px; }
     @media screen and (max-width: 860px) {
       .card .card1 {
         height: 230px;
-        width: 190px;
-        margin: 0 5px; } }
+        width: 190px; } }
     @media screen and (max-width: 804px) {
       .card .card1 {
         width: 180px;
         height: 220px;
-        padding: 3px;
-        margin: 0 5px; } }
+        padding: 3px; } }
     .card .card1 h3 {
       text-align: center;
       font-family: 'Roboto', sans-serif;
       line-height: 0;
       font-size: 20px; }
-      @media screen and (max-width: 904px) {
-        .card .card1 h3 {
-          font-size: 18.5px; } }
-      @media screen and (max-width: 860px) {
+      @media screen and (max-width: 960px) {
         .card .card1 h3 {
           font-size: 18px; } }
-      @media screen and (max-width: 804px) {
+      @media screen and (max-width: 877px) {
         .card .card1 h3 {
           font-size: 16px; } }
     .card .card1 p {
@@ -563,6 +620,9 @@ body {
       .hotels h2 {
         left: 9%;
         font-size: 24px; } }
+    @media screen and (max-width: 430px) {
+      .hotels h2 {
+        left: 1%; } }
 
 .hotel1 {
   display: block;
@@ -599,6 +659,11 @@ body {
     .hotel1 {
       width: 82%;
       left: 9%; } }
+  @media screen and (max-width: 430px) {
+    .hotel1 {
+      width: 98%;
+      left: 1%;
+      height: 50%; } }
   .hotel1 img {
     width: 50%;
     height: 100%;
@@ -625,6 +690,9 @@ body {
       @media screen and (max-width: 505px) {
         .hotel1 .hotel1-desc h3 {
           font-size: 16x; } }
+      @media screen and (max-width: 430px) {
+        .hotel1 .hotel1-desc h3 {
+          font-size: 14px; } }
 
 .hotel2 {
   display: none; }
@@ -650,6 +718,12 @@ body {
     @media screen and (max-width: 658px) {
       .desc1 h4 {
         font-size: 14px; } }
+    @media screen and (max-width: 430px) {
+      .desc1 h4 {
+        font-size: 13px; } }
+    @media screen and (max-width: 380px) {
+      .desc1 h4 {
+        font-size: 12px; } }
   .desc1 p {
     margin: 4px 0 0 4px;
     font-family: "Grenze", serif;
@@ -672,6 +746,10 @@ body {
     border-bottom: 1px solid black;
     width: 40px;
     margin-left: 4px; }
+    @media screen and (max-width: 400px) {
+      .desc1 input {
+        width: 30px;
+        font-size: 11px; } }
   .desc1 input:focus {
     outline: none; }
 
@@ -701,8 +779,16 @@ body {
     #search-hotels {
       width: 82%;
       left: 9%; } }
+  @media screen and (max-width: 430px) {
+    #search-hotels {
+      width: 98%;
+      left: 1%;
+      bottom: 12%; } }
   #search-hotels input {
     width: 65%; }
+    @media screen and (max-width: 360px) {
+      #search-hotels input {
+        width: 60%; } }
     #search-hotels input:focus {
       outline: none; }
   #search-hotels button {
@@ -712,6 +798,9 @@ body {
     @media screen and (max-width: 720px) {
       #search-hotels button {
         padding: 4px 0; } }
+    @media screen and (max-width: 360px) {
+      #search-hotels button {
+        width: 40%; } }
 
 #search-hotel-btn {
   display: grid;
@@ -749,6 +838,10 @@ body {
   height: 160px;
   width: 100%;
   padding-top: 30px; }
+  @media screen and (max-width: 430px) {
+    #discount {
+      padding-top: 0;
+      height: 110px; } }
 
 .discount-section-wrapper {
   width: 60%;
@@ -765,6 +858,9 @@ body {
   @media screen and (max-width: 505px) {
     .discount-section-wrapper {
       width: 82%; } }
+  @media screen and (max-width: 430px) {
+    .discount-section-wrapper {
+      width: 98%; } }
   .discount-section-wrapper p {
     font-size: 22px;
     float: left;
@@ -780,12 +876,18 @@ body {
         font-size: 18px; } }
     @media screen and (max-width: 505px) {
       .discount-section-wrapper p {
-        font-size: 16x; } }
+        font-size: 16px; } }
+    @media screen and (max-width: 430px) {
+      .discount-section-wrapper p {
+        font-size: 14px; } }
 
 #email {
   display: grid;
   grid-template-columns: 65% 35%;
   width: 100%; }
+  @media screen and (max-width: 430px) {
+    #email {
+      grid-template-columns: 60% 40%; } }
   #email button {
     padding: 5px 0;
     background-color: #273fad; }
@@ -834,14 +936,23 @@ body {
   @media screen and (max-width: 560px) {
     #flight-booking {
       height: 470px; } }
+  @media screen and (max-width: 460px) {
+    #flight-booking {
+      height: fit-content; } }
 
 .flight-booking-wrapper {
   width: 100%;
   display: flex;
   border: 1px solid black; }
+  @media screen and (max-width: 460px) {
+    .flight-booking-wrapper {
+      flex-flow: column nowrap; } }
 
 .booking-info-left {
   width: 40%; }
+  @media screen and (max-width: 460px) {
+    .booking-info-left {
+      width: 100%; } }
   .booking-info-left img {
     width: 100%; }
 
@@ -890,6 +1001,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around; }
+  @media screen and (max-width: 460px) {
+    .booking-info-right {
+      width: 100%;
+      margin: 60px 0 20px; } }
 
 .flight-search-info-container {
   display: grid;
@@ -899,6 +1014,9 @@ body {
   @media screen and (max-width: 640px) {
     .flight-search-info-container {
       width: 90%; } }
+  @media screen and (max-width: 460px) {
+    .flight-search-info-container {
+      margin-bottom: 20px; } }
 
 .flight-search-info {
   display: grid;
@@ -917,6 +1035,9 @@ body {
     @media screen and (max-width: 640px) {
       .flight-search-info label {
         font-size: 14px; } }
+    @media screen and (max-width: 430px) {
+      .flight-search-info label {
+        font-size: 12px; } }
   .flight-search-info input {
     font-size: 20px;
     width: 100%; }
@@ -974,8 +1095,8 @@ body {
   position: relative;
   display: block;
   width: 100%;
-  height: 500px;
-  margin-top: 80px;
+  height: fit-content;
+  margin: 40px 0 80px;
   background: url("../img/blueClippedBackground.svg") no-repeat;
   background-size: 100% 280px; }
   @media screen and (max-width: 600px) {
@@ -983,7 +1104,7 @@ body {
       background-size: 100% 260px; } }
 
 .market-place-wrapper {
-  height: 440px;
+  height: fit-content;
   width: 70%;
   margin: 0 auto;
   display: flex;
@@ -999,6 +1120,9 @@ body {
   @media screen and (max-width: 608px) {
     .market-place-wrapper {
       width: 90%; } }
+  @media screen and (max-width: 430px) {
+    .market-place-wrapper {
+      width: 98%; } }
   .market-place-wrapper h2 {
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
@@ -1085,13 +1209,19 @@ body {
       font-size: 18px; } }
   @media screen and (max-width: 505px) {
     .product-desc h3 {
-      font-size: 16x; } }
+      font-size: 16px; } }
+  @media screen and (max-width: 430px) {
+    .product-desc h3 {
+      font-size: 14px; } }
 
 .feature-bullets {
   padding-right: 20px; }
   @media screen and (max-width: 546px) {
     .feature-bullets {
       padding-right: 10px; } }
+  @media screen and (max-width: 430px) {
+    .feature-bullets {
+      padding-right: 5px; } }
 
 .unodered-list {
   font-family: "Grenze", serif;
@@ -1116,15 +1246,18 @@ body {
     .unodered-list {
       font-size: 12px; } }
 
+@media screen and (max-width: 430px) {
+  .btn-margin {
+    margin-top: 0;
+    margin-bottom: 5%; } }
+
 .market-place2 {
   display: none; }
 
 #a-more {
   display: block;
-  margin-top: 20px;
-  position: absolute;
-  bottom: 0;
-  right: 2%; }
+  margin: 20px 15px 0 0;
+  float: right; }
 
 #more {
   font-size: 22px;
@@ -1159,6 +1292,9 @@ body {
   @media screen and (max-width: 627px) {
     .customer-review-wrapper {
       width: 80%; } }
+  @media screen and (max-width: 430px) {
+    .customer-review-wrapper {
+      width: 98%; } }
   .customer-review-wrapper h2 {
     grid-area: h2;
     color: #ffffff;
@@ -1243,7 +1379,10 @@ body {
         font-size: 18px; } }
     @media screen and (max-width: 505px) {
       .customer-review h3 {
-        font-size: 16x; } }
+        font-size: 16px; } }
+    @media screen and (max-width: 430px) {
+      .customer-review h3 {
+        font-size: 14px; } }
   .customer-review p {
     text-align: center;
     font-size: 16px;
@@ -1254,6 +1393,9 @@ body {
     @media screen and (max-width: 700px) {
       .customer-review p {
         font-size: 12px; } }
+    @media screen and (max-width: 430px) {
+      .customer-review p {
+        font-size: 11px; } }
 
 #value-preposition {
   display: block;
@@ -1272,6 +1414,9 @@ body {
   @media screen and (max-width: 627px) {
     .value-preposition-wrapper {
       width: 80%; } }
+  @media screen and (max-width: 430px) {
+    .value-preposition-wrapper {
+      width: 98%; } }
   .value-preposition-wrapper h2 {
     grid-area: h2;
     font-family: 'Roboto', sans-serif;
@@ -1365,7 +1510,8 @@ body {
   position: relative;
   width: 250px;
   margin: 0 15px;
-  padding-right: 50px; }
+  padding-right: 50px;
+  box-shadow: 5px 5px 4px -2px rgba(0, 0, 0, 0.5); }
   @media screen and (max-width: 771px) {
     .button {
       margin: 7px; } }
@@ -1494,28 +1640,23 @@ body {
   left: 0; }
 
 #header {
-  position: relative;
-  min-height: 100vh; }
+  height: fit-content;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 10px; }
 
 .wrapper {
   background: url(../img/banner.svg) no-repeat;
-  background-size: cover;
-  height: 80vh; }
-  @media screen and (max-width: 1024px) {
-    .wrapper {
-      height: 70vh; } }
-  @media screen and (max-width: 860px) {
-    .wrapper {
-      height: 65vh; } }
-  @media screen and (max-width: 804px) {
-    .wrapper {
-      height: 60vh; } }
+  background-size: 100%;
+  height: fit-content; }
 
 #scrollDownBtn {
-  width: 6%;
-  position: absolute;
-  bottom: 8%;
-  left: 47%; }
+  display: block;
+  width: 100%;
+  margin: 3% auto; }
+  @media screen and (max-width: 1000px) {
+    #scrollDownBtn {
+      margin: 2% auto; } }
   @media screen and (max-width: 804px) {
     #scrollDownBtn {
       display: none; } }
@@ -1529,6 +1670,3 @@ body {
   @media screen and (max-width: 1024px) {
     .main-wrapper {
       width: 100%; } }
-  @media screen and (max-width: 804px) {
-    .main-wrapper {
-      margin: 150px auto 0; } }
