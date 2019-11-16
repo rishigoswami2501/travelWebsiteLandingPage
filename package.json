@@ -9,10 +9,13 @@
     "author": "Rishi Goswami",
     "license": "ISC",
     "devDependencies": {
+        "@babel/core": "^7.6.4",
+        "@babel/preset-env": "^7.6.3",
         "browser-sync": "^2.26.3",
         "del": "^3.0.0",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^6.1.0",
+        "gulp-babel": "^8.0.0",
         "gulp-clean-css": "^4.0.0",
         "gulp-concat": "^2.6.1",
         "gulp-imagemin": "^5.0.3",
@@ -23,6 +26,6 @@
         "gulp-uglify": "^3.0.2"
     },
     "dependencies": {
-        "scrollreveal": "^4.0.5"
+        "jquery": "^3.4.1"
     }
 }

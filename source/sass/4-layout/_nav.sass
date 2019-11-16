@@ -74,7 +74,8 @@
     //Responsive Nav Styling and Nav Toggle
     @media screen and ( max-width: 750px )
         .responsive-nav
-            display: none
+            height: 0%
+            width: 0%
             position: absolute
             top: 0
             left: 0
@@ -82,14 +83,17 @@
             justify-content: center
             align-items: center
             text-align: center
-            width: 100%
-            padding: 60px 20px
             background:#fff      //#0597F2
             z-index: 1
-            transition: all 1s linear
+            transition: width 500ms linear, height 500ms linear
+            -moz-transition: width 500ms linear, height 500ms linear
+            -o-transition: width 500ms linear, height 500ms linear
+            -webkit-transition: width 500ms linear, height 500ms linear
+            pointer-events: none
         .responsive-nav .nav-links
             display: block
             width: 100%
+            opacity: 0
         .responsive-nav .nav-links a
             border: 0
             padding: 20px
@@ -97,12 +101,51 @@
             color: #000000
             &:hover,&:active
                 background: #eeeeee
-                transform: scale(1.3)        
+                transform: scale(1.3)
+        .responsive-nav.unfold
+            position: fixed
+            width: 100%
+            height: 100%
+            pointer-events: all
+        .nav-links:nth-child(1)
+            transition: all 400ms ease 20ms
+            -moz-transition: all 400ms ease 20ms
+            -o-transition: all 400ms ease 20ms
+            -webkit-transition: all 400ms ease 20ms
+        .nav-links:nth-child(2)
+            transition: all 400ms ease 40ms
+            -moz-transition: all 400ms ease 40ms
+            -o-transition: all 400ms ease 40ms
+            -webkit-transition: all 400ms ease 40ms
+        .nav-links:nth-child(3)
+            transition: all 400ms ease 60ms
+            -moz-transition: all 400ms ease 60ms
+            -o-transition: all 400ms ease 60ms
+            -webkit-transition: all 400ms ease 60ms
+        .nav-links:nth-child(4)
+            transition: all 400ms ease 80ms
+            -moz-transition: all 400ms ease 80ms
+            -o-transition: all 400ms ease 80ms
+            -webkit-transition: all 400ms ease 80ms
+        .nav-links:nth-child(5)
+            transition: all 400ms ease 100ms
+            -moz-transition: all 400ms ease 100ms
+            -o-transition: all 400ms ease 100ms
+            -webkit-transition: all 400ms ease 100ms
+        .nav-links.visible
+            opacity: 1                 
         .nav-toggle
             display: block
-            z-index: 2  
-            a svg g rect          //Neeed to change
-                fill: #fff  
+            z-index: 2
+        .nav-toggle.fixed
+            position: fixed    
+        .nav-toggle a svg g rect
+            transition: all 400ms linear 100ms
+            -moz-transition: all 400ms linear 100ms
+            -o-transition: all 400ms linear 100ms
+            -webkit-transition: all 400ms linear 100ms
+        .nav-toggle a svg g rect.hamburger-color          //Neeed to change
+            fill: #000000  
             
 
               

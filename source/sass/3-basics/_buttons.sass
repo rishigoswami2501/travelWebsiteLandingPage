@@ -131,16 +131,78 @@ input[type="button"],
   background-color: #fff
 
 
+/*---------------------Radio Button Selection-------------------------*/
+.radio-btn-selection
+  width: fit-content
+  height: 10%
+  margin: 20px auto 0
+  display: flex 
+  justify-content: center
+  align-items: center
+
+/*Hotel Buttons*/  
+.hotel-dot
+    width: 24px
+    height: 24px
+    margin: 0 15px
+    border-radius: 50%
+    background: #BABCBF
+    cursor: pointer
+    transition: background-color 400ms ease
+.hotel-dot:hover
+    background-color:  #5C6373
 
 
+/*Market Place Buttons*/
+.market-place-dot
+  width: 24px
+  height: 24px
+  margin: 0 15px
+  border-radius: 50%
+  background: #BABCBF
+  cursor: pointer
+  transition: background-color 400ms ease
+.market-place-dot:hover
+  background-color:  #5C6373
 
+/*Customer Review Buttons*/
+.customer-dot
+  width: 24px
+  height: 24px
+  margin: 0 15px
+  border-radius: 50%
+  background: #BABCBF
+  cursor: pointer
+  transition: background-color 400ms ease
+.customer-dot:hover
+  background-color:  #5C6373
 
+    
+//Buttons Common to all
+/*Next and Previous Buttons*/
+.prev,.next
+  cursor: pointer    
+  width: auto
+  padding: 12px 22px 12px 22px
+  color: $btnclr
+  font-weight: bold
+  font-size: 30px
+  transition: 600ms ease
+  border-radius: 0 6px 6px 0
 
+/*changing border-radius of next button*/
+.next
+  border-radius: 6px 0 0 6px
 
+.prev:hover,.next:hover
+  background-color: $btnclr
+  color: #fff
+  box-shadow: 0 4px 2px -2px rgba(0,0,0,0.5)
+  transition: background-color 0.6s ease
 
-
-
-
+/*active dot background color*/
+.active
+  background-color: $btnclr       
 
 
 

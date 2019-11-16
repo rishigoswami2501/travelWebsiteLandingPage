@@ -13,6 +13,7 @@ let minifycss = require("gulp-clean-css");
 
 // JSS / plugins
 let uglify = require("gulp-uglify");
+let babel = require("gulp-babel")
 
 // Utility plugins
 let concat = require("gulp-concat");
@@ -81,7 +82,12 @@ task(img);
 function js(done) {
   src("source/js/*.js")
     .pipe(plumber())
-    .pipe(uglify())
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
+    .pipe(uglify().on('error',function(e){
+      console.log(e);
+    }))
     .pipe(dest("build/assets/js"));
   done();
 }

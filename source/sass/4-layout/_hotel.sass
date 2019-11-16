@@ -1,114 +1,73 @@
 #hotel
+    position: relative
     display: block
     width: 100%
-    height: 470px
-    position: relative
-    @media screen and ( max-width:930px)
-        height: 420px
-    @media screen and ( max-width:804px)
-        height: 380px
-    @media screen and ( max-width: 658px)
-        height: 340px
-    @media screen and ( max-width: 560px )
-        height: 310px
-            
-.hotels
-    position: relative
+    height: fit-content
     background: url("../img/blueClippedBackground.svg") no-repeat
-    height: 400px
     background-size: 100% 280px
-    @media screen and ( max-width: 930px )
-        height: 350px
-        background-size: 100% 230px
-    @media screen and ( max-width:804px  )
-        height: 320px
-        background-size: 100% 200px   
-    @media screen and ( max-width:658px  )
-        background-size: 100% 180px
-    @media screen and ( max-width: 568px )
-        height: 290px
-        background-size: 100% 170px
-            
-                 
-            
+    @media screen and ( max-width: 627px )
+        background-size: 100% 220px
+
+.hotels
+    height: fit-content
+    width: 70%
+    margin: 0 auto
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: flex-start
+    @media screen and ( max-width: 1064px )
+        width: 80%
+    @media screen and ( max-width:676px  )
+        width: 85%
+    @media screen and ( max-width: 608px )
+        width: 90%
+    @media screen and ( max-width: 430px )
+        width: 98%  
 
     h2
-        position: absolute
-        top: 2%
-        left: 20%
         color: #ffffff
         font-family: 'Roboto', sans-serif
         font-weight: 700
         font-style: italic
         font-size: 40px
-        @media screen and ( max-width: 930px )
-            left: 17%
         @media screen and ( max-width:  804px)
             font-size: 35px
-            left: 13%
             margin-top: 20px
         @media screen and ( max-width: 658px )
             font-size: 30px
-            left: 11%
             margin-top: 18px
         @media screen and ( max-width:568px  )
             font-size: 26px
             margin-top: 17px
         @media screen and ( max-width: 505px )
-            left: 9%
             font-size: 24px
-        @media screen and ( max-width: 430px )
-            left: 1%    
 
 
 //Hotels
 
-//1. Hotel 1        
-.hotel1
-    display: block
-    width: 60%
-    height: 60%
+//1. Hotel 1
+.hotel-slide
+    display: none
+    width: 100%
+    height: fit-content            
+.hotel-style
+    display: flex
+    width: 100%
+    height: fit-content
     background: #ffffff
-    position: absolute
-    top: 30%
-    left: 20%
     border: 1px solid #000000
     box-shadow: 0 7px 7px -3px rgba(0,0,0,0.5 )
-    @media screen and ( max-width: 930px )
-        width: 66%
-        height: 64%
-        top: 27%
-        left: 17%
-    @media screen and ( max-width:804px  )
-        width: 74%
-        height: 60%
-        top: 25%
-        left: 13%
-    @media screen and ( max-width: 658px )
-        width: 78%
-        height: 54%
-        left: 11%
-        top: 23%
-    @media screen and ( max-width: 568px )
-        height: 58%
-    @media screen and ( max-width: 505px )
-        width: 82%
-        left: 9%
-    @media screen and ( max-width: 430px )
-        width: 98%    
-        left: 1%
-        height: 50%    
-    
-    img
+    .hotel-img
+        display: block
         width: 50%
-        height: 100%
-        float: left
+        img
+            width: 100%
+            height: 100%
         
-    .hotel1-desc
+    .hotel-desc
         width: 50%
-        float: left
-            
-
+        padding-bottom: 20px
         h3
             margin: 5px auto 0
             text-align: center
@@ -125,16 +84,9 @@
             @media screen and ( max-width:505px)
                 font-size: 16x
             @media screen and ( max-width: 430px )
-                font-size: 14px       
+                font-size: 14px           
 
-       
-.hotel2
-    display: none
-   
-.hotel3
-    display: none
-
-.desc1
+.desc
     display: flex
     justify-content: center
     margin: 1px auto
@@ -169,8 +121,6 @@
             font-size: 13px
             margin-top: 1px
        
-                
-                
     input
         border: 0 
         border-bottom: 1px solid black
@@ -181,37 +131,18 @@
             font-size: 11px
              
     input:focus
-        outline: none     
+        outline: none                       
            
 #search-hotels
-    position: absolute
-    left: 20%
-    bottom: 4%
     display: flex
     flex-wrap: nowrap
     justify-content: center
-    width: 60%
-    @media screen and ( max-width: 930px )
-        width: 66%
-        left: 17%
-    @media screen and ( max-width:804px  )
-        width: 74%
-        left: 13%
-        bottom: 6%
-    @media screen and ( max-width: 658px )
-        width: 78%
-        left: 11%
-        bottom: 7% 
-    @media screen and ( max-width: 505px )
-        width: 82%
-        left: 9%
-    @media screen and ( max-width: 430px )
-        width: 98%    
-        left: 1%
-        bottom: 12%
+    width: 100%
+    height: fit-content
+    margin: 5% auto 0
     input
         width: 65%
-        @media screen and ( max-width: 360px )
+        @media screen and ( max-width: 430px )
             width: 60%            
         &:focus
             outline: none       
@@ -221,7 +152,7 @@
         background-color: $btnclr
         @media screen and ( max-width:720px )
             padding: 4px 0
-        @media screen and ( max-width: 360px )
+        @media screen and ( max-width: 430px )
             width: 40%    
 
 #search-hotel-btn
@@ -251,4 +182,6 @@
         @media screen and ( max-width:560px  )
             width: 20px
             height: 20px
+        @media screen and ( max-width: 450px )
+            display: none    
                                                       

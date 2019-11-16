@@ -1,0 +1,31 @@
+/*bounce animation*/
+#scrollDownBtn
+    animation: bounce 2000ms infinite
+    -moz-animation: bounce 2000ms infinite
+    -webkit-animation: bounce 2000ms infinite
+    -o-animation: bounce 2000ms infinite
+
+@keyframes bounce
+    0%,20%,50%,80%,100%
+        transform: translateY(0)
+    40%
+        transform: translateY(-30px)
+    60%
+        transform: translateY(-15px)            
+    
+/*fade animation*/
+.fade
+  -moz-animation-name: fade
+  -moz-animation-duration: 1000ms
+  -o-animation-name: fade
+  -o-animation-duration: 1000ms
+  -webkit-animation-name: fade
+  -webkit-animation-duration: 1000ms
+  animation-name: fade
+  animation-duration: 1000ms  
+
+@-webkit-keyframes fade
+  from
+    opacity: 0.4
+  to
+    opacity: 1  

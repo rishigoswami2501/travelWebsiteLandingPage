@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.min.css" />
+    <link rel="stylesheet" href="assets/js/js-lib/jqueryui/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/js/js-lib/jqueryui/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="assets/js/js-lib/jqueryui/jquery-ui.theme.min.css">
 </head>
 <body>
   <section id="header">
@@ -93,87 +96,106 @@
       <section id="hotel">
           <div class="hotels">
             <h2>Plan Your Trip</h2>
-            <div class="hotel1">
-              <img src="../assets/img/hotel1.jpg" alt="Hotel 1">
-              <div class="hotel1-desc">
-                <h3>Oberoi Hotel</h3>
-                <div class="desc1">
-                  <h4>Location:</h4>
-                  <p>New Delhi</p>
+            <div class="hotel-slide fade">
+              <div class="hotel-style">
+                <div class="hotel-img">
+                  <img src="../assets/img/hotel1.jpg" alt="Hotel 1">
                 </div>
-                <div class="desc1">
-                  <h4>Price:</h4>
-                  <p>1000$/Night</p>
-                </div>
-                <div class="desc1">
-                  <h4>Number of Nights:</h4>
-                  <input type="text" placeholder="e.g., 2" required>
-                </div>
-                <button class="atc-btn">
-                  <div class="atc">
-                    <p>Add To cart</p>
-                    <img src="assets/img/cart.svg" alt="Add To Cart">
+                <div class="hotel-desc">
+                  <h3>Oberoi Hotel</h3>
+                  <div class="desc">
+                    <h4>Location:</h4>
+                    <p>New Delhi</p>
                   </div>
-                </button>
+                  <div class="desc">
+                    <h4>Price:</h4>
+                    <p>1000$/Night</p>
+                  </div>
+                  <div class="desc">
+                    <h4>Number of Nights:</h4>
+                    <input type="text" placeholder="e.g., 2" required>
+                  </div>
+                  <button class="atc-btn">
+                    <div class="atc">
+                      <p>Add To cart</p>
+                      <img src="assets/img/cart.svg" alt="Add To Cart">
+                    </div>
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="hotel1 hotel2">
-              <img src="../assets/img/hotel2.jpg" alt="Hotel 2">
-              <div class="hotel1-desc">
-                <h3>JW Marriott Hotels</h3>
-                <div class="desc1">
-                  <h4>Location:</h4>
-                  <p>Chandigarh</p>
+            <div class="hotel-slide fade">
+              <div class="hotel-style">
+                <div class="hotel-img">
+                  <img src="../assets/img/hotel2.jpg" alt="Hotel 2">
                 </div>
-                <div class="desc1">
-                  <h4>Price:</h4>
-                  <p>750$/Night</p>
-                </div>
-                <div class="desc1">
-                  <h4>Number of Nights:</h4>
-                  <input type="text" placeholder="e.g., 2" required>
-                </div>
-                <button class="atc-btn">
-                  <div class="atc">
-                    <p>Add To cart</p>
-                    <img src="assets/img/cart.svg" alt="Add To Cart">
+                <div class="hotel-desc">
+                  <h3>JW Marriott Hotels</h3>
+                  <div class="desc">
+                    <h4>Location:</h4>
+                    <p>Chandigarh</p>
                   </div>
-                </button>
+                  <div class="desc">
+                    <h4>Price:</h4>
+                    <p>750$/Night</p>
+                  </div>
+                  <div class="desc">
+                    <h4>Number of Nights:</h4>
+                    <input type="text" placeholder="e.g., 2" required>
+                  </div>
+                  <button class="atc-btn">
+                    <div class="atc">
+                      <p>Add To cart</p>
+                      <img src="assets/img/cart.svg" alt="Add To Cart">
+                    </div>
+                  </button>
+                </div>
               </div>
             </div>
-            <div class="hotel1 hotel3">
-              <img src="../assets/img/hotel3.jpg" alt="Hotel 3">
-              <div class="hotel1-desc">
-                <h3>Taj Hotel</h3>
-                <div class="desc1">
-                  <h4>Location:</h4>
-                  <p>Mumbai</p>
+            <div class="hotel-slide fade">
+              <div class="hotel-style">
+                <div class="hotel-img">
+                  <img src="../assets/img/hotel3.jpg" alt="Hotel 3">
                 </div>
-                <div class="desc1">
-                  <h4>Price:</h4>
-                  <p>1100$/Night</p>
-                </div>
-                <div class="desc1">
-                  <h4>Number of Nights:</h4>
-                  <input type="text" placeholder="e.g., 2" required>
-                </div>
-                <button class="atc-btn">
-                  <div class="atc">
-                    <p>Add To cart</p>
-                    <img src="assets/img/cart.svg" alt="Add To Cart">
+                <div class="hotel-desc">
+                  <h3>Taj Hotel</h3>
+                  <div class="desc">
+                    <h4>Location:</h4>
+                    <p>Mumbai</p>
                   </div>
-                </button>
+                  <div class="desc">
+                    <h4>Price:</h4>
+                    <p>1100$/Night</p>
+                  </div>
+                  <div class="desc">
+                    <h4>Number of Nights:</h4>
+                    <input type="text" placeholder="e.g., 2" required>
+                  </div>
+                  <button class="atc-btn">
+                    <div class="atc">
+                      <p>Add To cart</p>
+                      <img src="assets/img/cart.svg" alt="Add To Cart">
+                    </div>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
-          <div id="search-hotels">
-            <input type="search" name="Hotel Search" id="hotel-search" placeholder="Search For Hotel, City or Locality">
-            <button type="button">
-              <div id="search-hotel-btn">
-                <p>Search Hotels</p>
-                <img src="assets/img/Hotel.svg" alt="Hotel Search">
-              </div>
-            </button>
+            <div class="radio-btn-selection">
+              <a class="prev" onclick="pushHotelSlide(-1)">&#10094;</a>
+              <span class="hotel-dot" onclick="currentHotelSlide(1)"></span>
+              <span class="hotel-dot" onclick="currentHotelSlide(2)"></span>
+              <span class="hotel-dot" onclick="currentHotelSlide(3)"></span>
+              <a class="next" onclick="pushHotelSlide(1)">&#10095;</a>
+            </div>
+            <div id="search-hotels">
+              <input type="search" name="Hotel Search" id="hotel-search" placeholder="Search For Hotel, City or Locality">
+              <button type="button">
+                <div id="search-hotel-btn">
+                  <p>Search Hotels</p>
+                  <img src="assets/img/Hotel.svg" alt="Hotel Search">
+                </div>
+              </button>
+            </div>
           </div>
       </section>
       <section id="discount">
@@ -289,51 +311,79 @@
       <section id="market-place">
         <div class="market-place-wrapper">
           <h2>Market Place</h2>
-          <div class="market-place1">
-            <div class="market-place1-left">
-              <img src="assets/img/marketplace1.jpg" alt="Canon Camera">
-              <article>
-                <p>MRP: </p>
-                <span class="mrp">$1399</span>
-                <p>Price: </p>
-                <span style="color:red;" class="price">$999 (29% OFF)</span>
-              </article>
-            </div>
-            <div class="market-place1-right">
-              <div class="product-desc">
-                <h3>Nikon Camera</h3>
-                <div class="feature-bullets">
-                  <ul class="unodered-list">
-                    <li><span>
-                      Sensor: APS-C CMOS sensor with 24.2 MP (high resolution for large prints and image cropping)
-                    </span></li>
-                    <li><span>
-                      ISO: 100-25600 sensitivity range (critical for obtaining grain-free pictures, especially in low light)
-                    </span></li>
-                  </ul>
-                </div>
+          <div class="market-place-slide fade">
+            <div class="market-place">
+              <div class="market-place-left">
+                <img src="assets/img/marketplace1.jpg" alt="Canon Camera">
+                <article>
+                  <p>MRP: </p>
+                  <span class="mrp">$1399</span>
+                  <p>Price: </p>
+                  <span style="color:red;" class="price">$999 (29% OFF)</span>
+                </article>
               </div>
-              <button class="atc-btn btn-margin">
-                <div class="atc">
-                  <p>Add To cart</p>
-                  <img src="assets/img/cart.svg" alt="Add To Cart">
+              <div class="market-place-right">
+                <div class="product-desc">
+                  <h3>Nikon Camera</h3>
+                  <div class="feature-bullets">
+                    <ul class="unodered-list">
+                      <li><span>
+                        Sensor: APS-C CMOS sensor with 24.2 MP (high resolution for large prints and image cropping)
+                      </span></li>
+                      <li><span>
+                        ISO: 100-25600 sensitivity range (critical for obtaining grain-free pictures, especially in low light)
+                      </span></li>
+                    </ul>
+                  </div>
                 </div>
-              </button>
+                <button class="atc-btn btn-margin">
+                  <div class="atc">
+                    <p>Add To cart</p>
+                    <img src="assets/img/cart.svg" alt="Add To Cart">
+                  </div>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="market-place1 market-place2">
-            <div class="market-place1-left">
-              <img src="assets/img/marketplace2.jpg" alt="Louis Vuitton Hand Bag">
-              <article>
-                <p>MRP: </p>
-                <span class="mrp">$1599</span>
-                <p>Price: </p>
-                <span style="color:red;" class="price">$1299 (19% OFF)</span>
-              </article>
+          <div class="market-place-slide fade">
+            <div class="market-place">
+              <div class="market-place-left">
+                <img src="assets/img/marketplace2.jpg" alt="Louis Vuitton Hand Bag">
+                <article>
+                  <p>MRP: </p>
+                  <span class="mrp">$1599</span>
+                  <p>Price: </p>
+                  <span style="color:red;" class="price">$1299 (19% OFF)</span>
+                </article>
+              </div>
+              <div class="market-place-right">
+                <div class="product-desc">
+                  <h3>Gucci Handbag</h3>
+                  <div class="feature-bullets">
+                    <ul class="unodered-list">
+                      <li><span>
+                          Sensor: APS-C CMOS sensor with 24.2 MP (high resolution for large prints and image cropping)
+                        </span></li>
+                      <li><span>
+                          ISO: 100-25600 sensitivity range (critical for obtaining grain-free pictures, especially in low light)
+                        </span></li>
+                    </ul>
+                  </div>
+                </div>
+                <button class="atc-btn btn-margin">
+                  <div class="atc">
+                    <p>Add To cart</p>
+                    <img src="assets/img/cart.svg" alt="Add To Cart">
+                  </div>
+                </button>
+              </div>
             </div>
-            <div class="market-place1-right">
-            
-            </div>
+          </div>
+          <div class="radio-btn-selection">
+            <a class="prev" onclick="pushMarketPlaceSlide(-1)">&#10094;</a>
+            <span class="market-place-dot" onclick="currentMarketPlaceSlide(1)"></span>
+            <span class="market-place-dot" onclick="currentMarketPlaceSlide(2)"></span>
+            <a class="next" onclick="pushMarketPlaceSlide(1)">&#10095;</a>
           </div>
         </div>
         <a id="a-more" href="#"><span id="more">more...</span></a>
@@ -341,42 +391,58 @@
       <section style="margin-top: 50px;" id="customer-review">
         <div class="customer-review-wrapper">
           <h2>Customer Review</h2>
-          <div class="customer customer1">
-            <div class="customer-review-box">
-              <img src="assets/img/customer1.jpg" alt="Customer Image">
-              <div class="customer-review">
-                <h3>John Doe</h3>
-                <p>Great Products! Great Service! Great Hospitality! I'm very much satisfied with their way of treating their customers.</p>
+          <div class="customer-slide fade">
+            <div class="customer">
+              <div class="customer-review-box">
+                <img src="assets/img/customer1.jpg" alt="Customer Image">
+                <div class="customer-review">
+                  <h3>John Doe</h3>
+                  <p>Great Products! Great Service! Great Hospitality! I'm very much satisfied with their way of treating their customers.</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="customer customer2">
-            <div class="customer-review-box">
-              <img src="assets/img/customer2.jpg" alt="Customer Image">
-              <div class="customer-review">
-                <h3>Nickolas Bayerle</h3>
-                <p>I ordered a Gucci Belt and I bought my Hotel tickets for US Presidecy Hotel. I found my belt reached before me reached to the hotel. Extremely excellent service.</p>
+          <div class="customer-slide fade">
+            <div class="customer">
+              <div class="customer-review-box">
+                <img src="assets/img/customer2.jpg" alt="Customer Image">
+                <div class="customer-review">
+                  <h3>Nickolas Bayerle</h3>
+                  <p>I ordered a Gucci Belt and I bought my Hotel tickets for US Presidecy Hotel. I found my belt reached before me reached to the hotel. Extremely excellent service.</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="customer customer3">
-            <div class="customer-review-box">
-              <img style="width: 70%;" src="assets/img/customer3.png" alt="Customer Image">
-              <div class="customer-review">
-                <h3>Jane Doe</h3>
-                <p>Great quality products and experience. I am in love with this website.
-                </p>
+          <div class="customer-slide fade">
+            <div class="customer">
+              <div class="customer-review-box">
+                <img style="width: 70%;" src="assets/img/customer3.png" alt="Customer Image">
+                <div class="customer-review">
+                  <h3>Jane Doe</h3>
+                  <p>Great quality products and experience. I am in love with this website.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="customer customer4">
-            <div class="customer-review-box">
-              <img src="assets/img/customer4.jpg" alt="Customer Image">
-              <div class="customer-review">
-                <h3>Tony Robbinson</h3>
-                <p>This website has a combined effect of OYO Rooms, Make My Trip & Amazon. Awesome Experience! Love this website. Well Done TravelOO!</p>
+          <div class="customer-slide fade">
+            <div class="customer">
+              <div class="customer-review-box">
+                <img src="assets/img/customer4.jpg" alt="Customer Image">
+                <div class="customer-review">
+                  <h3>Tony Robbinson</h3>
+                  <p>This website has a combined effect of OYO Rooms, Make My Trip & Amazon. Awesome Experience! Love this website. Well Done TravelOO!</p>
+                </div>
               </div>
             </div>
+          </div>
+          <div class="radio-btn-selection customer-radiobtn">
+            <a class="prev" onclick="pushCustomerReviewSlide(-1)">&#10094;</a>
+            <span class="customer-dot" onclick="currentCustomerReviewSlide(1)"></span>
+            <span class="customer-dot" onclick="currentCustomerReviewSlide(2)"></span>
+            <span class="customer-dot" onclick="currentCustomerReviewSlide(3)"></span>
+            <span class="customer-dot" onclick="currentCustomerReviewSlide(4)"></span>
+            <a class="next" onclick="pushCustomerReviewSlide(1)">&#10095;</a>
           </div>
         </div>
       </section>
