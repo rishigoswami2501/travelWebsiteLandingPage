@@ -99,7 +99,9 @@ function vendor(done) {
   src(["source/js/vendors/jquery.min.js", "source/js/vendors/*.js"])
     .pipe(plumber())
     .pipe(concat("vendors.js"))
-    .pipe(uglify())
+    .pipe(uglify().on('error',function(e){
+      console.log(e)
+    }))
     .pipe(dest("build/assets/js"));
   done();
 }

@@ -1,15 +1,5 @@
 //import { type } from "os"
-
 // JavaScript
-
-//window.sr = ScrollReveal(); 
-
-// sr.reveal('h1', {
-//     delay: 0,
-//     duration: 200,
-//     origin: 'bottom',
-//     distance: '100px' 
-// });
 
 
 //Navigation
@@ -183,3 +173,112 @@ function currentCustomerReviewSlide(index){
 }
 
 
+/*Let's get your hand dirty on Scroll Reveal*/
+
+window.sr  = ScrollReveal()
+
+sr.reveal('.card',{
+  duration: 800,
+  distance: '100%',
+  easing: 'ease-out',
+  origin: 'left',
+  scale: 0.2
+})
+
+sr.reveal('#hotel',{
+  duration: 800,
+  distance: '100%',
+  easing: 'ease-in-out',
+  origin: 'right',
+  scale: 0.2
+})
+
+sr.reveal('#discount',{
+  duration: 800,
+  distance: '100%',
+  easing: 'ease-in',
+  origin: 'left',
+  scale: 0.4
+})
+
+sr.reveal(".flight-booking-wrapper", {
+  duration: 800,
+  distance: "100%",
+  origin: "right",
+  easing: "ease-in-out",
+});
+
+sr.reveal(".booking-info-left", {
+  duration: 800,
+  delay: 1000,
+  easing: "ease",
+});
+
+sr.reveal(".booking-info-left img", {
+  duration: 600,
+  delay: 1500,
+  easing: "ease",
+  scale: 0.1
+});
+
+sr.reveal(".booking-info-right", {
+  duration: 800,
+  delay: 1000,
+  easing: "ease-in-out"
+});
+
+sr.reveal("#market-place",{
+  duration: 800,
+  distance: "100%",
+  origin: 'right',
+  scale: 0.2,
+  easing: "ease"
+})
+
+sr.reveal('#customer-review',{
+  duration: 800,
+  distance: "100%",
+  origin: 'left',
+  scale: 0.2,
+  easing: 'ease-in-out'
+})
+
+sr.reveal('#value-preposition',{
+  duration: 800,
+  distance: "100%",
+  origin: 'right',
+  scale: 0.2
+})
+
+sr.reveal('#footer',{
+  duration: 1000,
+  distance: '100%',
+  scale: 0.1,
+  easing: 'ease-out'
+})
+
+sr.reveal('#mobile-app',{
+  duration: 800,
+  delay: 1000,
+  scale: 0.1
+})
+
+sr.reveal(".mobapp-download",{
+  duration: 700,
+  delay: 1000,
+  scale: 0.1
+})
+
+sr.reveal(".sponsored-banks",{
+  delay: 1700,
+  scale: 0.1,
+  origin: 'left',
+  distance: '100%'
+});
+
+sr.reveal(".footer-links", {
+  delay: 1800,
+  scale: 0.1,
+  origin: "right",
+  distance: "100%"
+});
